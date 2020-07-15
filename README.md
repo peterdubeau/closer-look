@@ -79,7 +79,7 @@ _The **Closer Look** MVP is for user’s to be able to create an account with a 
 
 #### Component Hierarchy
 
-> Use this section to define your React components and the data architecture of your app.
+![Whimsical Diagram](https://whimsical.com/Nbux4P1h5U1W6bPUfieNbH)
 
 ``` structure
 
@@ -92,19 +92,22 @@ src
 
 |_ src
       |__ components/
-            |__ Login
-            |__ Sign-up.jsx
-            |__ User-profile.jsx
-            |__ Nav.jsx
-            |__ Header.jsx
-            |__ Layout.jsx
-            |__ Footer.jsx
+            |__ Login.jsx
+            |__ UserProfile.jsx
             |__ BrandDetails.jsx
             |__ BrandList.jsx
+            |__ CreateUser.jsx
+            |__ EditUser.jsx
+            |__ shared/
+                  |__ Header.jsx
+                  |__ Layout.jsx
+                  |__ Footer.jsx
+                  |__ Nav.jsx
       |_ screens/
             |__ Login/Sign-up.jsx
-            |__ User-profile.jsx
+            |__ User.jsx
             |__ Home.jsx
+            |__ BrandDetails
       |__ services/
             |__ apiConfig.js
             |__ brands.js
@@ -122,7 +125,7 @@ src
 |    Header    | functional |   n   |   n   | _The header will contain the navigation and logo._               |
 |  Navigation  | functional |   n   |   n   | _The navigation will provide a link to each of the pages._       |
 |    Login     | functional |   y   |   n   | _will allow the user to sign into their account_      |
-|   Sign-up    |   class    |   n   |   y   | _frames each screen with header, nav and footer._ |               |
+|  create user | functional |   n   |   y   | _frames each screen with header, nav and footer._ |               |
 | User-profile | functional |   n   |   n   | _will allow the user to to create an account._
 |Brand Details |   class    |   n   |   n   | _will display relevant brand info to user ._ |
 | Brand List   |   class    |   n   |   n   | _will display list of brands that match user criteria._ |
