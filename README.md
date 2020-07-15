@@ -50,6 +50,9 @@ _The **Closer Look** MVP is for user’s to be able to create an account with a 
 - _Create a user sign in page._
 - _Create a user create account_
 - _Create a user profile page with CRUD features_
+- _CSS & Styling for all pages_
+
+![Trello](https://trello.com/b/rfMtm7ni/team-purple)
 
 
 <br>
