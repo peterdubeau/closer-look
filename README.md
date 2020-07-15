@@ -47,10 +47,10 @@ _The **Closer Look** MVP is for user’s to be able to create an account with a 
 
 ### Goals
 
-- _Create a user account and sign in page._
-- _Have working generic controller actions for full-CRUD using Express, Mongoose, and MongoDB. to implement the user and password function and the users data._
-- _Create an API of objects of products._
-- _Create a React app with components to display and filter the brands, products and social issues of the users choice ._
+- _Create a user sign in page._
+- _Create a user create account_
+- _Create a user profile page with CRUD features_
+
 
 <br>
 
@@ -59,10 +59,12 @@ _The **Closer Look** MVP is for user’s to be able to create an account with a 
 
 |     Library      | Description                                |
 | :--------------: | :----------------------------------------- |
-|      React       | _Lorem ipsum dolor sit amet, consectetur._ |
-|   React Router   | _Lorem ipsum dolor sit amet, consectetur._ |
+|      React       | basic framework for the page |
+|   React Router   | allow routing between react screens |
 |     Express      | Backbone of the database  |
 |  Express Router  | Will make it much easier to integrate new pages and routes to the site |
+|     Mongoose     | Will verify the schema for our useres |
+|    body-parser   | allow users to edit account detials |
 
 <br>
 
@@ -73,7 +75,6 @@ _The **Closer Look** MVP is for user’s to be able to create an account with a 
 ![Click Here](https://app.zeplin.io/project/5ef50be43a1c1da368f2178d/dashboard?sid=5ef50d3cdef8c09dd98bcf3e)
 
 - The team’s Zeplin file of all frameworks for the site.
-
 
 
 #### Component Hierarchy
@@ -88,9 +89,28 @@ src
       |__ graphics
       |__ images
       |__ mockups
-|__ components/
-      |__ Header.jsx
-|__ services/
+
+|_ src
+      |__ components/
+            |__ Login
+            |__ Sign-up.jsx
+            |__ User-profile.jsx
+            |__ Nav.jsx
+            |__ Header.jsx
+            |__ Layout.jsx
+            |__ Footer.jsx
+            |__ BrandDetails.jsx
+            |__ BrandList.jsx
+      |_ screens/
+            |__ Login/Sign-up.jsx
+            |__ User-profile.jsx
+            |__ Home.jsx
+      |__ services/
+            |__ apiConfig.js
+            |__ brands.js
+            |__ users.js
+      |__ utils/      
+            |__ search.jsx 
 
 ```
 
@@ -101,13 +121,12 @@ src
 | :----------: | :--------: | :---: | :---: | :--------------------------------------------------------------- |
 |    Header    | functional |   n   |   n   | _The header will contain the navigation and logo._               |
 |  Navigation  | functional |   n   |   n   | _The navigation will provide a link to each of the pages._       |
-|   Login      |   class    |   y   |   n   | _The gallery will render the posts using cards in flexbox._      |
-| Create user  | functional |   n   |   y   | _The cards will render the post info via props._                 |
-|    Footer    | functional |   n   |   n   | _The footer will show info about me and a link to my portfolio._ |
-|    Footer    | functional |   n   |   n   | _The footer will show info about me and a link to my portfolio._ |
-|    Footer    | functional |   n   |   n   | _The footer will show info about me and a link to my portfolio._ |
-|    Footer    | functional |   n   |   n   | _The footer will show info about me and a link to my portfolio._ |
-|    Footer    | functional |   n   |   n   | _The footer will show info about me and a link to my portfolio._ |
+|    Login     | functional |   y   |   n   | _will allow the user to sign into their account_      |
+|   Sign-up    |   class    |   n   |   y   | _frames each screen with header, nav and footer._ |               |
+| User-profile | functional |   n   |   n   | _will allow the user to to create an account._
+|Brand Details |   class    |   n   |   n   | _will display relevant brand info to user ._ |
+| Brand List   |   class    |   n   |   n   | _will display list of brands that match user criteria._ |
+|    Search    | functional |   n   |   n   | _allows users to search by brand or cause._ |
 |    Footer    | functional |   n   |   n   | _The footer will show info about me and a link to my portfolio._ |
 
 #### Component Estimates
@@ -115,16 +134,16 @@ src
 
 | Task                | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
-| Add Contact Form    |    L     |     3 hrs      |     2 hrs     |    3 hrs    |
-| Create CRUD Actions |    H     |     3 hrs      |     1 hrs     |     TBD     |
-| TOTAL               |          |     6 hrs      |     3 hrs     |     TBD     |
-| TOTAL               |          |     6 hrs      |     3 hrs     |     TBD     |
-| TOTAL               |          |     6 hrs      |     3 hrs     |     TBD     |
-| TOTAL               |          |     6 hrs      |     3 hrs     |     TBD     |
-| TOTAL               |          |     6 hrs      |     3 hrs     |     TBD     |
-| TOTAL               |          |     6 hrs      |     3 hrs     |     TBD     |
-| TOTAL               |          |     6 hrs      |     3 hrs     |     TBD     |
-| TOTAL               |          |     6 hrs      |     3 hrs     |     TBD     |
+|     Layout          | H | 3hrs | - | - |
+|    Brand Data       | M | 3hrs | - | - |
+|      Login          | H | 6hrs | - | - |
+|     Sign-up         | H | 3hrs | - | - |
+|    User-profile     | H | 6hrs | - | - |
+|    Brand Details    | L | 4hrs | - | - |
+|    Brand List       | L | 4hrs | - | - |
+|    Search           | L | 4hrs | - | - |
+| Mongo/Heroku setup  | H | 5hrs | - | - |
+
 
 
 <br>
@@ -154,7 +173,9 @@ database_db
 
 ## Post-MVP
 
-> Use this section to document ideas you've had that would be fun (or necessary) for your Post-MVP. This will be helpful when you return to your project after graduation!
+- _Have working generic controller actions for full-CRUD using Express, Mongoose, and MongoDB. to implement the user and password function and the users data._
+- _Create an API of objects of products._
+- _Create a React app with components to display and filter the brands, products and social issues of the users choice ._
 
 ***
 
