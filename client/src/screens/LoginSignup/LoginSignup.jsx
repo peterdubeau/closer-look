@@ -1,9 +1,9 @@
 import React from 'react'
-import './LoginSignup.css'
-import Login from '../../components/Login'
-import UserCreate from '../../components/UserCreate'
+import './LoginSignUp.css'
+import Login from '../../components/Login/Login'
+import UserCreate from '../../components/UserCreate/UserCreate'
 
-export default function LoginSignup() {
+export default function LoginSignUp() {
     return (
         <>
             <Login />
