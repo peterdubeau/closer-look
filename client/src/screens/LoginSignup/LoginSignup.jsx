@@ -6,9 +6,11 @@ import UserCreate from '../../components/UserCreate/UserCreate'
 export default function LoginSignUp() {
     return (
         <>
-            <Login />
-            <div className='vertical-line'></div>
-            <UserCreate />
+            <div className='login-signup'>
+                <Login />
+                <div className='vertical-line'></div>
+                <UserCreate />
+            </div>
         </>
     )
 }
