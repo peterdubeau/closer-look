@@ -75,14 +75,14 @@ _The **Closer Look** MVP is for user’s to be able to create an account with a 
 
 #### Wireframes
 
-![Click Here](https://app.zeplin.io/project/5ef50be43a1c1da368f2178d/dashboard?sid=5ef50d3cdef8c09dd98bcf3e)
+[Click Here](https://app.zeplin.io/project/5ef50be43a1c1da368f2178d/dashboard?sid=5ef50d3cdef8c09dd98bcf3e)
 
 - The team’s Zeplin file of all frameworks for the site.
 
 
 #### Component Hierarchy
 
-![Whimsical Diagram](https://whimsical.com/Nbux4P1h5U1W6bPUfieNbH)
+[Whimsical Diagram](https://whimsical.com/Nbux4P1h5U1W6bPUfieNbH)
 
 ``` structure
 
