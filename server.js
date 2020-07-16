@@ -3,7 +3,7 @@ const cors = require('cors')
 const bodyParser = require('body-parser')
 const logger = require('morgan')
 // const userRoutes = require('./routes/users') // out until mongo is up and running
-// const db = require('./db/connection') // out for now.
+const db = require('./db/connection') // out for now.
 const PORT = process.env.PORT || 3000
 
 const app = express();
