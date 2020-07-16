@@ -1,0 +1,10 @@
+.login-signup {
+    display: flex;
+}
+
+.vertical-line {
+    border-left: 1px solid green;
+    height: 500px;
+    margin-left: 150px;
+    margin-right: 150px;
+  }
