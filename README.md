@@ -23,7 +23,7 @@
 
 ## Overview
 
-_**Closer Look ** is an application that allows users to dive deeper into a brand and their products to increase the user’s awareness of social side-effects associated with their purchase by displaying the brands ethical actions.
+_**Closer Look **_ is an application that allows users to dive deeper into a brand and their products to increase the user’s awareness of social side-effects associated with their purchase by displaying the brands ethical actions.
 
 ### Team Members
 
