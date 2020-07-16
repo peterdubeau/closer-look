@@ -1,33 +1,33 @@
 
 
-- [Overview](#Overview)
-  - [Team Members](#Team-Members)
-  - [Team Expectations](#Team-Expectations)
-  - [Permissions](#Permissions)
-- [MVP](#MVP)
-  - [Goals](#Goals)
-  - [Libraries](#Libraries)
-  - [Client (Front End)](#Client-Front-End)
-    - [Wireframes](#Wireframes)
-    - [Component Hierarchy](#Component-Hierarchy)
-    - [Component Breakdown](#Component-Breakdown)
-    - [Component Estimates](#Component-Estimates)
-  - [Server (Back End)](#Server-Back-End)
-    - [ERD Model](#ERD-Model)
-    - [Data Heirarchy](#Data-Heirarchy)
-- [Post-MVP](#Post-MVP)
-- [Code Showcase](#Code-Showcase)
-- [Code Issues & Resolutions](#Code-Issues--Resolutions)
+- [Overview](#overview)
+  - [Team Members](#team-members)
+  - [Team Expectations](#team-expectations)
+  - [Permissions](#permissions)
+- [MVP](#mvp)
+  - [Goals](#goals)
+  - [Libraries](#libraries)
+  - [Client (Front End)](#client-front-end)
+    - [Wireframes](#wireframes)
+    - [Component Hierarchy](#component-hierarchy)
+    - [Component Breakdown](#component-breakdown)
+    - [Component Estimates](#component-estimates)
+  - [Server (Back End)](#server-back-end)
+    - [ERD Model](#erd-model)
+    - [Data Heirarchy](#data-heirarchy)
+- [Post-MVP](#post-mvp)
+- [Code Showcase](#code-showcase)
+- [Code Issues & Resolutions](#code-issues--resolutions)
 
 <br>
 
 ## Overview
 
-_**Closer Look ** is an application that allows users to dive deeper into a brand and their products to increase the user’s awareness of social side effects associated with their purchase by displaying the brands ethical actions. 
+_**Closer Look ** is an application that allows users to dive deeper into a brand and their products to increase the user’s awareness of social side-effects associated with their purchase by displaying the brands ethical actions.
 
 ### Team Members
 
-Created, designed, and developed by [Darnycya Smith](https://github.com/darnycya), [Alex Beckerman](https://github.com/alexbaldman) [Calliope Jimenez-Clark](https://github.com/NocturnalMusing) and [Pete Du Beau](https://github.com/peterdubeau) (Git Czar) for the General Assembly Software Engineering Immersive (May '20 Cohort: Constellations) Unit 3 Group Project.
+Created, designed, and developed by [Darnycya Smith](https://github.com/darnycya), [Alex Beckerman](https://github.com/alexbaldman), [Calliope Jimenez-Clark](https://github.com/NocturnalMusing) and [Pete Du Beau](https://github.com/peterdubeau) (Git Czar) for the General Assembly Software Engineering Immersive (May '20 Cohort: Constellations) Unit 3 Group Project.
 
 ### Team Expectations
 
@@ -41,14 +41,14 @@ Digital assets used with full licensing and permission from [Death to Stock Phot
 
 ## MVP
 
-_The **Closer Look** MVP is for user’s to be able to create an account with a name and password and be able for their preferences to be displayed every time that they log in._
+_The **Closer Look** MVP is for user’s to be able to create an account with a name and password and be able to have their preferences be displayed every time that they log in._
 
 <br>
 
 ### Goals
 
-- _Create a user sign in page._
-- _Create a user create account_
+- _Create a user 'sign-in' page_
+- _Create a user 'create account' page_
 - _Create a user profile page with CRUD features_
 - _CSS & Styling for all pages_
 
@@ -66,8 +66,8 @@ _The **Closer Look** MVP is for user’s to be able to create an account with a 
 |   React Router   | allow routing between react screens |
 |     Express      | Backbone of the database  |
 |  Express Router  | Will make it much easier to integrate new pages and routes to the site |
-|     Mongoose     | Will verify the schema for our useres |
-|    body-parser   | allow users to edit account detials |
+|     Mongoose     | Will verify the Schema for our users |
+|    body-parser   | allow users to edit account details |
 
 <br>
 
@@ -116,7 +116,7 @@ src
             |__ brands.js
             |__ users.js
       |__ utils/      
-            |__ search.jsx 
+            |__ search.jsx
 
 ```
 
@@ -158,11 +158,11 @@ src
 
 #### ERD Model
 
-> Use this section to display an image of a computer generated ERD model.
+> This section will be used to display an image of a computer generated ERD model.
 
 #### Data Heirarchy
 
-> Use this section to display the database, table, and attribute heirarchy.
+> The database, table, and attribute hierarchy are displayed below:
 
 ``` structure
 
@@ -179,17 +179,16 @@ database_db
 
 ## Post-MVP
 
-- _Have working generic controller actions for full-CRUD using Express, Mongoose, and MongoDB. to implement the user and password function and the users data._
+- _Have working generic controller actions for full-CRUD using Express, Mongoose, and MongoDB. in order to implement the user and password function and the users' data._
 - _Create an API of objects of products._
-- _Create a React app with components to display and filter the brands, products and social issues of the users choice ._
+- _Create a React app with components to display and filter the brands, products and social issues of the users' choice._
 
 ***
 
 ## Code Showcase
 
-> Use this section to include a brief code snippet of functionality that you are proud of and a brief description.
+> This section will contain brief code snippets of functionality we are proud of, along with a brief description.
 
 ## Code Issues & Resolutions
 
-> Use this section to list of all major issues encountered and their resolution, if you'd like.
-
+> This section will catalog any major issues encountered and their resolution.
