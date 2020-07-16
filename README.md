@@ -82,7 +82,6 @@ _The **Closer Look** MVP is for user’s to be able to create an account with a 
 
 #### Component Hierarchy
 
-[Whimsical Diagram](https://whimsical.com/Nbux4P1h5U1W6bPUfieNbH)
 
 ``` structure
 
@@ -158,11 +157,9 @@ src
 
 #### ERD Model
 
-> This section will be used to display an image of a computer generated ERD model.
+[Whimsical Diagram](https://whimsical.com/Nbux4P1h5U1W6bPUfieNbH)
 
 #### Data Heirarchy
-
-> The database, table, and attribute hierarchy are displayed below:
 
 ``` structure
 
