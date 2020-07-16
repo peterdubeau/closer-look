@@ -8,10 +8,10 @@ import User from './screens/User/User'
 function App() {
   return (
     <div className="app">
-      <Switch>
-        <Route exact path="/" component={Home} />
-        <Route exact path="/user" component={User} />
-      </Switch>
+      {/* <Switch> */}
+        {/* <Route exact path="/" component={Home} /> */}
+        {/* <Route exact path="/user" component={User} /> */}
+      {/* </Switch> */}
     </div>
   );
 }
