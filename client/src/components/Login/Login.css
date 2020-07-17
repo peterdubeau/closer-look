@@ -3,3 +3,7 @@
     flex-direction: column;
     text-align: center;
 }
+
+.login img {
+    margin: 0 auto;
+}
