@@ -8,6 +8,10 @@
     margin: 0 auto;
 }
 
+.full-name {
+    margin-top: 20px;
+}
+
 .create-an-header {
     font-size: 10px;
     color: #4c7586;
@@ -22,13 +26,16 @@
     font-size: 12px;
     text-align: center;
     font-weight: 300;
+    margin: 5px;
 }
 
-.sign-up {
+.signup-btn {
     border: none;
     border-radius: 6px;
     background-color: #248eb9;
     color: white;
     font-size: 13px;
     height: 30px;
+    margin: 5px;
+    
 }

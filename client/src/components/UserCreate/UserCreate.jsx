@@ -36,7 +36,7 @@ export default function UserCreate() {
         </div>
         <input type='text' name='email' placeholder='EMAIL' value={email} onChange={handleEventChange} />
         <input type='password' name='password' placeholder='PASSWORD' value={password} onChange={handleEventChange} />
-        <button className='sign-up' onClick={handleSubmit}>SIGN UP</button>
+        <button className='signup-btn' onClick={handleSubmit}>SIGN UP</button>
       </form>
     </div>
   )
