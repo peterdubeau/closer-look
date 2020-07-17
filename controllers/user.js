@@ -14,8 +14,9 @@ const getUsers = async(req, res) => {
 
 const getUser = async (req, res) => {
   try {
-    const { id } = req.params
-    const user = await User.findById(id)
+    const { email } = req.params
+    // const user = await User.findById(id)
+    const user = await User.findOne({email:email})
     if (user) {
       return res.json(user)
     } 
@@ -62,10 +63,25 @@ const deleteUser = async (req, res) => {
   }
 }
 
+const getUserByEmail = async (req, res) => {
+  try {
+    const { email } = req.body
+    // const user = await User.findById(id)
+    const user = await User.findOne({email:email})
+    if (user) {
+      return res.json(user)
+    } 
+    res.status(404).json({message: 'User not found!'})
+  } catch (error) {
+    res.status(500).json({ error: error.message})
+  }
+}
+
 module.exports = {
   createUser,
   getUsers,
   getUser,
   updateUser,
-  deleteUser
+  deleteUser,
+  getUserByEmail
 }

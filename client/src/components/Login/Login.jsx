@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { getUser } from '../../services/users'
+import { getUserByEmail } from '../../services/users'
 import './Login.css'
 
 export default function Login() {
@@ -19,8 +19,10 @@ const { email } = userState
 
   let handleSubmit = async (e) => {
     e.preventDefault()
-    const get = await getUser(userState)
-  console.log('hi')
+    // console.log(userState)
+    // console.log(email)
+    const get = await getUserByEmail(email)
+    console.log(get)
   }
 
 

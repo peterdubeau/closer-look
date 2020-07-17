@@ -18,6 +18,15 @@ export const getUser = async id => {
   }
 }
 
+export const getUserByEmail = async email => {
+  try {
+    const response = await api.post('/userByEmail', { email: email })
+    return response.data
+} catch (error) {
+    throw error
+}
+}
+
   export const createUser = async user => {
     try {
         const response = await api.post('/users', user)
