@@ -4,14 +4,19 @@ import { Route, Switch } from 'react-router-dom'
 import Home from './screens/Home/Home'
 import User from './screens/User/User'
 // import logo from './logo.svg';
+import LoginSignup from './screens/LoginSignUp/LoginSignUp'
 
 function App() {
   return (
     <div className="app">
-      <Switch>
+      {/* <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/user" component={User} />
-      </Switch>
+      </Switch> */}
+      <Route path='/'>
+        <LoginSignup />
+      </Route>
+
     </div>
   );
 }
