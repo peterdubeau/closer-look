@@ -1,6 +1,6 @@
 .login-signup {
     display: flex;
-    
+    align-items: center;
 }
 
 .vertical-line {

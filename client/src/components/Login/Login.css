@@ -3,3 +3,36 @@
     flex-direction: column;
     text-align: center;
 }
+
+.login img {
+    margin: 0 auto;
+}
+
+.login-header {
+    font-size: 10px;
+    color: #4c7586;
+    padding-bottom: 10px;
+}
+
+.login input {
+    height: 30px;
+    width: 232px;
+    border-radius: 6px;
+    border: solid 1px #4c7586;
+    background-color: white;
+    color: #4c7586;
+    font-size: 12px;
+    text-align: center;
+    font-weight: 300;
+    margin: 10px;
+}
+
+.login-btn {
+    border: none;
+    border-radius: 6px;
+    background-color: #248eb9;
+    color: white;
+    font-size: 13px;
+    height: 30px;
+    margin: 10px;
+}
