@@ -4,6 +4,10 @@
     text-align: center;
 }
 
+.signup img {
+    margin: 0 auto;
+}
+
 .create-an-header {
     font-size: 10px;
     color: #4c7586;
