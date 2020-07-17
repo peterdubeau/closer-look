@@ -1,8 +1,8 @@
 import React from 'react';
 import './App.css';
-import { Route, Switch } from 'react-router-dom'
-import Home from './screens/Home/Home'
-import User from './screens/User/User'
+import { Route } from 'react-router-dom'
+// import Home from './screens/Home/Home'
+// import User from './screens/User/User'
 // import logo from './logo.svg';
 import LoginSignUp from './screens/LoginSignUp/LoginSignUp'
 
