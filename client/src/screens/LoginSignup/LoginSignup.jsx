@@ -3,7 +3,6 @@ import './LoginSignUp.css'
 import Login from '../../components/Login/Login'
 import UserCreate from '../../components/UserCreate/UserCreate'
 import Layout from '../../components/shared/Layout/Layout'
-import Header from '../../components/shared/Header/Header'
 
 export default function LoginSignUp() {
     return (
