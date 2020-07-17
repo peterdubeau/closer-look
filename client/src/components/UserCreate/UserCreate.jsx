@@ -22,8 +22,8 @@ export default function UserCreate() {
 
   let handleSubmit = async (e) => {
     e.preventDefault()
-    const created = await createUser()
-    console.log("hey you clicked a button!")
+    const created = await createUser(userState)
+    console.log("hey you clicked a button!")  
   }
   return (
     <div className='signup'>
