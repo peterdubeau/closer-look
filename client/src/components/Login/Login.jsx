@@ -1,16 +1,18 @@
 import React, { useState } from 'react'
 import { getUserByEmail } from '../../services/users'
 import './Login.css'
+import { Link } from 'react-router-dom'
 
 export default function Login() {
 
   const initialState = {
-    email: ''
+    email: '',
+    id: ''
   }
   
 const [userState, userSetState] = useState(initialState)
 
-const { email } = userState
+const { email, id } = userState
 
 
   function handleEventChange(e) { 
@@ -22,7 +24,8 @@ const { email } = userState
     // console.log(userState)
     // console.log(email)
     const get = await getUserByEmail(email)
-    console.log(get)
+    userSetState({ ...userState, id: get._id})
+    console.log(userState)
   }
 
 
