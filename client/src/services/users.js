@@ -9,9 +9,9 @@ export const getUsers = async () => {
   }
 }
 
-export const getUser = async id => {
+export const getUser = async email => {
   try {
-    const response = await api.get(`/users/${id}`)
+    const response = await api.get(`/userByEmail/${email}`)
     return response.data
   } catch (error) {
     throw error
@@ -20,7 +20,7 @@ export const getUser = async id => {
 
 export const getUserByEmail = async email => {
   try {
-    const response = await api.post('/userByEmail', { email: email })
+    const response = await api.get(`/userByEmail/${email}`)
     return response.data
 } catch (error) {
     throw error

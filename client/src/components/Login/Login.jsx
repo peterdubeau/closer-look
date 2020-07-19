@@ -20,7 +20,7 @@ const { email } = userState
   let handleSubmit = async (e) => {
     e.preventDefault()
     // console.log(userState)
-    // console.log(email)
+    console.log(email)
     const get = await getUserByEmail(email)
     console.log(get)
   }

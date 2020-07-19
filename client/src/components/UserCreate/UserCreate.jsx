@@ -24,6 +24,7 @@ export default function UserCreate() {
     e.preventDefault()
     const created = await createUser(userState)
   }
+  
   return (
     <div className='signup'>
       <form className='signup'>
