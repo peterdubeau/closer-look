@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
+import {Link } from 'react-router-dom'
 import { getUserByEmail } from '../../services/users'
+// import User from './screens/User/User'
 import './Login.css'
 
 export default function Login() {
@@ -22,7 +24,7 @@ const { email } = userState
     // console.log(userState)
     // console.log(email)
     const get = await getUserByEmail(email)
-    console.log(get)
+    console.log(email)
   }
 
 
@@ -33,7 +35,8 @@ const { email } = userState
                 <h4>LOG IN TO YOUR ACCOUNT</h4>
         <input type='text' name='email' placeholder='EMAIL' value={email} onChange={handleEventChange}/>
                 <input type='password' name='password' placeholder='PASSWORD' onChange={handleEventChange} />
-                <button onClick={handleSubmit} >LOG IN</button>
+        <Link to={`/userByEmail/${email}`}><button onClick={handleSubmit} >LOG IN</button></Link>
+        {/* <Route path={`/userByEmail/${email}`}><User /></Route> */}
             </div>
     )
 }

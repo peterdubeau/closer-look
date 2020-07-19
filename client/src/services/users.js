@@ -20,7 +20,7 @@ export const getUser = async id => {
 
 export const getUserByEmail = async email => {
   try {
-    const response = await api.post('/userByEmail', { email: email })
+    const response = await api.get(`/userByEmail/${email}`, { email: email })
     return response.data
 } catch (error) {
     throw error
@@ -36,9 +36,9 @@ export const getUserByEmail = async email => {
     }
   }
 
-  export const updateUser = async (id, user) => {
+  export const updateUser = async (email, user) => {
     try {
-        const response = await api.put(`/users/${id}`, user)
+        const response = await api.put(`/userByEmail/${email}`, user)
         return response.data
     } catch (error) {
         throw error

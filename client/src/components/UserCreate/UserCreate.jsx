@@ -40,36 +40,3 @@ export default function UserCreate() {
     </div>
   )
 }
-
-
-  // const [user, setUser] = useState({
-  //   firstName: '',
-  //   lastName: '',
-  //   email: '',
-  //   password: ''
-  // })
-
-  // let userInput = (e) => {
-  //   setUser(e.target.value)
-  // }
-
-  // const [firstName, setFirstName] = useState('')
-  // let firstNameInput = (e) => {
-  //   setFirstName(e.target.value)
-  // }
-
-  // const [lastName, setLastName] = useState('')
-  // let lastNameInput = (e) => {
-  //   setLastName(e.target.value)
-  // }
-
-  // const [email, setEmail] = useState('')
-  // let emailInput = (e) => {
-  //   setEmail(e.target.value)
-  // }
-
-  // const [password, setPassword] = useState('')
-  // let passwordInput = (e) => {
-  //   setPassword(e.target.value)
-  // }
-

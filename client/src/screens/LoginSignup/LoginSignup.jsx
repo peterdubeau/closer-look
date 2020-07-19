@@ -1,5 +1,5 @@
 import React from 'react'
-import './LoginSignUp.css'
+// import './LoginSignUp.css'
 import Login from '../../components/Login/Login'
 import UserCreate from '../../components/UserCreate/UserCreate'
 import Layout from '../../components/shared/Layout/Layout'
