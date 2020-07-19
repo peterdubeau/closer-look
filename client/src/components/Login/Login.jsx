@@ -36,7 +36,7 @@ const { email, id } = userState
                 <h4>LOG IN TO YOUR ACCOUNT</h4>
         <input type='text' name='email' placeholder='EMAIL' value={email} onChange={handleEventChange}/>
                 <input type='password' name='password' placeholder='PASSWORD' onChange={handleEventChange} />
-                <button onClick={handleSubmit} >LOG IN</button>
+                <Link to={`/api/users/${id}`}><button onClick={handleSubmit} >LOG IN</button></Link>
             </div>
     )
 }
