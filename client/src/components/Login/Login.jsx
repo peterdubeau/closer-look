@@ -21,8 +21,6 @@ const { email, id } = userState
 
   let handleSubmit = async (e) => {
     e.preventDefault()
-    // console.log(userState)
-    // console.log(email)
     const get = await getUserByEmail(email)
     userSetState({ ...userState, id: get._id})
     console.log(userState)

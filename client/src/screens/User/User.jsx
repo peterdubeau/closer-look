@@ -1,5 +1,4 @@
 import React from 'react'
-// import './LoginSignUp.css'
 import Layout from '../../components/shared/Layout/Layout'
 import UserEdit from '../../components/UserEdit/UserEdit'
 
