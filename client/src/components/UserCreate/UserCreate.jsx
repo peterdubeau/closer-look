@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import './UserCreate.css'
 import { createUser } from '../../services/users'
 import { Link } from 'react-router-dom'
+import UserImage from '../../assets/images/UserIcon.png'
 
 
 export default function UserCreate() {
@@ -28,7 +29,7 @@ export default function UserCreate() {
   return (
     <div className='signup'>
       <form className='signup'>
-        <img src='null' />
+        <img src={UserImage} />
         <header>
           <div className='line'></div>
           <h4 className='create-an-header'>CREATE AN ACCOUNT</h4>
