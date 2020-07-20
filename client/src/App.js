@@ -7,6 +7,7 @@ import { Route } from 'react-router-dom'
 import LoginSignUp from './screens/LoginSignUp/LoginSignup'
 import UserCreate from './components/UserCreate/UserCreate';
 import UserEdit from './components/UserEdit/UserEdit'
+import User from './screens/User/User'
 
 function App() {
   return (
@@ -19,7 +20,7 @@ function App() {
         <LoginSignUp />
       </Route>
       <Route path='/api/users/:id'>
-        <UserEdit />
+        <UserEdit component={User}/>
       </Route>
 
     </div>

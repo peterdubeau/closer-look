@@ -14,9 +14,9 @@ const getUsers = async(req, res) => {
 
 const getUser = async (req, res) => {
   try {
-    const { email } = req.params
-    // const user = await User.findById(id)
-    const user = await User.findOne({email:email})
+    const { id } = req.params
+    const user = await User.findById(id)
+    // const user = await User.findOne({email:email})
     if (user) {
       return res.json(user)
     } 

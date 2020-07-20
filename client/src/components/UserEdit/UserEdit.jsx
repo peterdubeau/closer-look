@@ -1,10 +1,11 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Link, withRouter } from 'react-router-dom'
 import './UserEdit.css'
-import { updateUser } from '../../services/users'
+import { updateUser, getUser } from '../../services/users'
 
 
-function UserEdit() {
+
+function UserEdit(props) {
 
   const initialState = {
     imgURL: '',
@@ -17,6 +18,21 @@ function UserEdit() {
   const [userState, userSetState] = useState(initialState)
 
   const { imgURL, firstName, lastName, email, password } = userState
+
+  const displayUser = async (e) => {
+    const get = await getUser(props.match.params.id)
+    userSetState({
+      ...userState,
+      firstName: get.firstName,
+      lastName: get.lastName,
+      email: get.email,
+      password: get.password
+    })
+    console.log(firstName)
+  }
+  useEffect(() => {
+    displayUser()
+  },[])
   
   function handleEventChange(e) {
     userSetState({ ...userState, [e.target.name]: e.target.value })
