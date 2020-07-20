@@ -23,7 +23,7 @@ const main = async () => {
       ]
   
       await User.insertMany(users)
-      console.log("Created users!")
+      console.log("Created user!")
   }
   const run = async () => {
       await main()
