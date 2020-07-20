@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { Link, withRouter } from 'react-router-dom'
 import './UserEdit.css'
 import { updateUser, getUser } from '../../services/users'
+import Layout from '../shared/Layout/Layout'
 
 
 
@@ -32,8 +33,8 @@ function UserEdit(props) {
   }
   useEffect(() => {
     displayUser()
-  },[])
-  
+  }, [])
+
   function handleEventChange(e) {
     userSetState({ ...userState, [e.target.name]: e.target.value })
   }
@@ -44,18 +45,20 @@ function UserEdit(props) {
   }
 
   return (
-    <div className='signup'>
-      <form className='signup'>
-        <img src={imgURL} />
-        <div className='full-name'>
-          <input type='text' name='firstName' placeholder={firstName} value={firstName} onChange={handleEventChange} />
-          <input type='text' name='lastName' placeholder={lastName} value={lastName} onChange={handleEventChange} />
-        </div>
-        <input type='text' name='email' placeholder={email} value={email} onChange={handleEventChange} />
-        <input type='password' name='password' placeholder={password} value={password} onChange={handleEventChange} />
-        <Link to={`/userByEmail/${email}`}><button className='signup-btn' onClick={handleSubmit}>UPDATE</button></Link>
-      </form>
-    </div>
+    <Layout>
+      <div className='user'>
+        <form className='user'>
+          <img src={imgURL} />
+          <div className='full-name'>
+            <input type='text' name='firstName' placeholder={firstName} value={firstName} onChange={handleEventChange} />
+            <input type='text' name='lastName' placeholder={lastName} value={lastName} onChange={handleEventChange} />
+          </div>
+          <input type='text' name='email' placeholder={email} value={email} onChange={handleEventChange} />
+          <input type='password' name='password' placeholder={password} value={password} onChange={handleEventChange} />
+          <Link to={`/userByEmail/${email}`}><button className='update-btn' onClick={handleSubmit}>UPDATE</button></Link>
+        </form>
+      </div>
+    </Layout>
   )
 }
 
