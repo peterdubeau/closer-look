@@ -50,8 +50,8 @@ function UserEdit(props) {
         <form className='user'>
           <img src={imgURL} />
           <div className='full-name'>
-            <input type='text' name='firstName' placeholder={firstName} value={firstName} onChange={handleEventChange} />
-            <input type='text' name='lastName' placeholder={lastName} value={lastName} onChange={handleEventChange} />
+            <input type='text' name='firstName' placeholder={firstName} value={firstName} onChange={handleEventChange} className='firstname' />
+            <input type='text' name='lastName' placeholder={lastName} value={lastName} onChange={handleEventChange} className='lastname'/>
           </div>
           <input type='text' name='email' placeholder={email} value={email} onChange={handleEventChange} />
           <input type='password' name='password' placeholder={password} value={password} onChange={handleEventChange} />
