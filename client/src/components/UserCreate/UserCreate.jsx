@@ -29,14 +29,20 @@ export default function UserCreate() {
     <div className='signup'>
       <form className='signup'>
         <img src='null' />
+        <header>
+          <div className='line'></div>
           <h4 className='create-an-header'>CREATE AN ACCOUNT</h4>
+          <div className='line'></div>
+        </header>
         <div className='full-name'>
           <input type='text' name='firstName' placeholder='FIRST NAME' value={firstName} onChange={handleEventChange} />
           <input type='text' name='lastName' placeholder='LAST NAME' value={lastName} onChange={handleEventChange} />
         </div>
         <input type='text' name='email' placeholder='EMAIL' value={email} onChange={handleEventChange} />
         <input type='password' name='password' placeholder='PASSWORD' value={password} onChange={handleEventChange} />
-        <Link to={`/api/users/`}> <button className='signup-btn' onClick={handleSubmit}>SIGN UP</button></Link>
+        <Link to={`/api/users/`}> 
+          <button className='signup-btn' onClick={handleSubmit}>SIGN UP</button>
+        </Link>
       </form>
     </div>
   )

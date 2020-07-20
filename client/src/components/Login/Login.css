@@ -9,9 +9,22 @@
 }
 
 .login-header {
+    margin: 5px;
+}
+
+.log-header {
     font-size: 10px;
     color: #4c7586;
     padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.log-line {
+    width: 100px;
+    border: 1px solid #4C7586;
+    transform: rotate(180deg);
 }
 
 .login input {
