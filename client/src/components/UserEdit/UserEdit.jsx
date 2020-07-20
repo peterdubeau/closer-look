@@ -29,7 +29,8 @@ function UserEdit(props) {
       firstName: get.firstName,
       lastName: get.lastName,
       email: get.email,
-      password: get.password
+      password: get.password,
+      id: get._id
     })
     console.log(firstName)
   }
@@ -43,10 +44,11 @@ function UserEdit(props) {
 
   let handleSubmit = async (e) => {
     e.preventDefault()
-    const created = await updateUser(userState)
+    const created = await updateUser(id, userState)
+    console.log(created)
   }
 
-  let handleDelete = async (e) => {
+  let handleDelete = async () => {
     const deleted = await deleteUser(id)
   }
 
