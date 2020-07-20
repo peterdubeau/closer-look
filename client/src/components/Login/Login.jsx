@@ -1,16 +1,18 @@
 import React, { useState } from 'react'
 import { getUserByEmail } from '../../services/users'
 import './Login.css'
+import { Link, withRouter } from 'react-router-dom'
 
-export default function Login() {
+function Login() {
 
   const initialState = {
-    email: ''
+    email: '',
+    id: ''
   }
   
 const [userState, userSetState] = useState(initialState)
 
-const { email } = userState
+const { email, id } = userState
 
 
   function handleEventChange(e) { 
@@ -22,7 +24,8 @@ const { email } = userState
     // console.log(userState)
     // console.log(email)
     const get = await getUserByEmail(email)
-    console.log(get)
+    userSetState({ ...userState, id: get._id})
+    console.log(userState)
   }
 
 
@@ -33,7 +36,9 @@ const { email } = userState
                 <h4 className='login-header'>LOG IN TO YOUR ACCOUNT</h4>
         <input type='text' name='email' placeholder='EMAIL' value={email} onChange={handleEventChange}/>
                 <input type='password' name='password' placeholder='PASSWORD' onChange={handleEventChange} />
-                <button onClick={handleSubmit} className='login-btn'>LOG IN</button>
+                <Link to={`/api/users/${id}`}><button onClick={handleSubmit} >LOG IN</button></Link>
             </div>
     )
 }
+
+export default withRouter(Login)
