@@ -29,7 +29,7 @@ export const getProduct = async id => {
 
   export const updateProduct = async (id, product) => {
     try {
-        const response = await api.put(`/products/${id}`, products)
+        const response = await api.put(`/products/${id}`, product)
         return response.data
     } catch (error) {
         throw error
