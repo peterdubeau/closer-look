@@ -56,6 +56,7 @@ function UserEdit(props) {
           <input type='text' name='email' placeholder={email} value={email} onChange={handleEventChange} />
           <input type='password' name='password' placeholder={password} value={password} onChange={handleEventChange} />
           <Link to={`/userByEmail/${email}`}><button className='update-btn' onClick={handleSubmit}>UPDATE</button></Link>
+          <button className='delete-btn'>DELETE USER</button>
         </form>
       </div>
     </Layout>
