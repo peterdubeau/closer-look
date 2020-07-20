@@ -32,11 +32,11 @@ const { email, id } = userState
 
     return (
             <div className='login'>
-                <img src='null' />
+                <img src='https://zpl.io/V4m6oQz' />
                 <h4 className='login-header'>LOG IN TO YOUR ACCOUNT</h4>
         <input type='text' name='email' placeholder='EMAIL' value={email} onChange={handleEventChange}/>
                 <input type='password' name='password' placeholder='PASSWORD' onChange={handleEventChange} />
-                <Link to={`/api/users/${id}`}><button onClick={handleSubmit} >LOG IN</button></Link>
+                <Link to={`/api/users/${id}`}><button onClick={handleSubmit} className='login-btn'>LOG IN</button></Link>
             </div>
     )
 }

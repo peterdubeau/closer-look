@@ -1,0 +1,57 @@
+.user {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 420px;
+}
+
+.user img {
+    margin: 0 auto;
+}
+
+.full-name {
+    margin-top: 20px;
+}
+
+.firstname,
+.lastname {
+    width: 194px;
+}
+
+.create-an-header {
+    font-size: 10px;
+    color: #4c7586;
+}
+
+.user input {
+    height: 30px;
+    border-radius: 6px;
+    border: solid 1px #4c7586;
+    background-color: white;
+    color: #4c7586;
+    font-size: 14px;
+    text-align: center;
+    font-weight: 300;
+    margin: 5px;
+}
+
+.update-btn {
+    border: none;
+    border-radius: 6px;
+    background-color: #248eb9;
+    color: white;
+    font-size: 13px;
+    height: 30px;
+    width: 50%;
+    margin: 5px;
+}
+
+.delete-btn {
+    border: none;
+    border-radius: 6px;
+    background-color: white;
+    color: #248eb9;
+    font-size: 13px;
+    height: 30px;
+    margin: 5px;
+}
