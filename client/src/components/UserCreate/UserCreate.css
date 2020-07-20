@@ -8,13 +8,31 @@
     margin: 0 auto;
 }
 
+form {
+    width: 280px;
+}
+
 .full-name {
     margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+header {
+    display: flex;
+    align-items: center;
 }
 
 .create-an-header {
     font-size: 10px;
     color: #4c7586;
+    margin: 5px;
+}
+
+.line {
+    width: 100px;
+    border: 1px solid #4C7586;
+    transform: rotate(180deg);
 }
 
 .signup input {
