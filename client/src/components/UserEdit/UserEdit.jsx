@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { Link, withRouter } from 'react-router-dom'
 import './UserEdit.css'
-import { updateUser, getUser } from '../../services/users'
+import { updateUser, getUser, deleteUser } from '../../services/users'
 import Layout from '../shared/Layout/Layout'
 
 
@@ -44,6 +44,10 @@ function UserEdit(props) {
     const created = await updateUser(userState)
   }
 
+  let handleDelete = async (e) => {
+    const deleted = await deleteUser(props.match.params.id)
+  }
+
   return (
     <Layout>
       <div className='user'>
@@ -51,12 +55,12 @@ function UserEdit(props) {
           <img src={imgURL} />
           <div className='full-name'>
             <input type='text' name='firstName' placeholder={firstName} value={firstName} onChange={handleEventChange} className='firstname' />
-            <input type='text' name='lastName' placeholder={lastName} value={lastName} onChange={handleEventChange} className='lastname'/>
+            <input type='text' name='lastName' placeholder={lastName} value={lastName} onChange={handleEventChange} className='lastname' />
           </div>
           <input type='text' name='email' placeholder={email} value={email} onChange={handleEventChange} />
           <input type='password' name='password' placeholder={password} value={password} onChange={handleEventChange} />
           <Link to={`/userByEmail/${email}`}><button className='update-btn' onClick={handleSubmit}>UPDATE</button></Link>
-          <button className='delete-btn'>DELETE USER</button>
+          <Link to='/'><button className='delete-btn' onClick={handleDelete}>DELETE USER</button></Link>
         </form>
       </div>
     </Layout>
