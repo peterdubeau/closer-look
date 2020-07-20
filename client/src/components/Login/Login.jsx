@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { getUserByEmail } from '../../services/users'
 import './Login.css'
 import { Link, withRouter } from 'react-router-dom'
+import UserImage from '../../assets/images/UserIcon.png'
 
 function Login() {
 
@@ -30,7 +31,7 @@ function Login() {
 
   return (
     <div className='login'>
-      <img src='https://zpl.io/V4m6oQz' />
+      <img src={UserImage} className='login-img'/>
       <header className='log-header'>
         <div className='log-line'></div>
         <h4 className='login-header'>LOG IN TO YOUR ACCOUNT</h4>

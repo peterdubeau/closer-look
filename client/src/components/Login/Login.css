@@ -4,8 +4,9 @@
     align-items: center;
 }
 
-.login img {
+.login-img {
     margin: 0 auto;
+    padding: 30px;
 }
 
 .login-header {

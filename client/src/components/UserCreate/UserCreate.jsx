@@ -29,7 +29,7 @@ export default function UserCreate() {
   return (
     <div className='signup'>
       <form className='signup'>
-        <img src={UserImage} />
+        <img className='signup-img' src={UserImage} />
         <header>
           <div className='line'></div>
           <h4 className='create-an-header'>CREATE AN ACCOUNT</h4>
