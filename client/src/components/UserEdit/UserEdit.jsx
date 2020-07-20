@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, withRouter } from 'react-router-dom'
 import './UserEdit.css'
 import { updateUser } from '../../services/users'
 
 
-export default function UserEdit() {
+function UserEdit() {
 
   const initialState = {
     imgURL: '',
@@ -17,7 +17,7 @@ export default function UserEdit() {
   const [userState, userSetState] = useState(initialState)
 
   const { imgURL, firstName, lastName, email, password } = userState
-
+  
   function handleEventChange(e) {
     userSetState({ ...userState, [e.target.name]: e.target.value })
   }
@@ -42,3 +42,5 @@ export default function UserEdit() {
     </div>
   )
 }
+
+export default withRouter(UserEdit)

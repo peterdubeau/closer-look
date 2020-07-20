@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import './UserCreate.css'
 import { createUser } from '../../services/users'
+import { Link } from 'react-router-dom'
 
 
 export default function UserCreate() {
@@ -35,7 +36,7 @@ export default function UserCreate() {
         </div>
         <input type='text' name='email' placeholder='EMAIL' value={email} onChange={handleEventChange} />
         <input type='password' name='password' placeholder='PASSWORD' value={password} onChange={handleEventChange} />
-        <button className='signup-btn' onClick={handleSubmit}>SIGN UP</button>
+        <Link to={`/api/users/`}> <button className='signup-btn' onClick={handleSubmit}>SIGN UP</button></Link>
       </form>
     </div>
   )

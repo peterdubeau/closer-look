@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import { getUserByEmail } from '../../services/users'
 import './Login.css'
-import { Link } from 'react-router-dom'
+import { Link, withRouter } from 'react-router-dom'
 
-export default function Login() {
+function Login() {
 
   const initialState = {
     email: '',
@@ -40,3 +40,5 @@ const { email, id } = userState
             </div>
     )
 }
+
+export default withRouter(Login)
