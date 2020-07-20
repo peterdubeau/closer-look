@@ -4,8 +4,9 @@
     text-align: center;
 }
 
-.signup img {
+.signup-img {
     margin: 0 auto;
+    padding: 30px;
 }
 
 form {
