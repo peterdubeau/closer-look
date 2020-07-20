@@ -7,9 +7,9 @@ export default class Header extends Component {
     render() {
         return (
             <div className='header'>
-                <img src={Hamburger}/>
+                <img className='hamburger' src={Hamburger}/>
                 <h1>CLOSER LOOK</h1>
-                <img src={Search}/>
+                <img className='search' src={Search}/>
             </div>
         )
     }

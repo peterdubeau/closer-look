@@ -1,5 +1,6 @@
 .header {
     display: flex;
+    align-items: center;
     height: 105px;
     width: 95%;
     margin: 0 auto;
@@ -18,4 +19,13 @@
     line-height: 1;
     margin-left: 15px;
     font-family: 'Changa One', cursive;
+}
+
+.hamburger {
+   margin-left: 20px;
+   margin-right: 25px;
+}
+
+.search {
+    margin-left: 700px;
 }
