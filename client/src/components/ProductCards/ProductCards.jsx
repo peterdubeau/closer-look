@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import './ProductCards.css';
 import { getProducts } from '../../services/products'
 
-export default function ProductCards() {
+export default function ProductCards(props) {
 
     const initialState = {
       imgURL: '',
@@ -26,7 +26,7 @@ export default function ProductCards() {
       info: get.info,
       id: get._id
     })
-    console.log(get)
+    // console.log(get)
   }
   useEffect(() => {
     displayProduct()
@@ -35,17 +35,17 @@ export default function ProductCards() {
   function handleEventChange(e) {
     userSetState({ ...userState, [e.target.name]: e.target.value })
   }
-console.log(userState)
-
+// console.log(userState)
+console.log(props.component)
 
   return (
-
     <div className="product-cards">
-        <Link className="product" to={`/api/products/:${id}`}>
-                <img className="product-image" src={imgURL} />
-                <div className="product-brand">{brandName}</div>
-                <div className="product-info">{info}</div>
-            </Link>
+      {props.component.map(product =>
+        <Link className="product" to={`/api/products/:${product.id}`}>
+          <img className="product-image" src={product.imgURL} />
+          <div className="product-brand">{product.brandName}</div>
+          <div className="product-info">{product.info}</div>
+        </Link>)}
         </div>
     )
   }
