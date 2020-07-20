@@ -1,0 +1,21 @@
+.header {
+    display: flex;
+    height: 105px;
+    width: 95%;
+    margin: 0 auto;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #d3f4ee;  
+    box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.12);
+}
+
+.header h1 {
+    display: flex;
+    align-items: center;
+    color: #1e789c;
+    font-size: 45px;
+    font-weight: 400;
+    line-height: 1;
+    margin-left: 15px;
+    font-family: 'Changa One', cursive;
+}
