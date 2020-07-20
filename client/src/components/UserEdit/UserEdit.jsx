@@ -20,14 +20,17 @@ function UserEdit(props) {
 
   const { imgURL, firstName, lastName, email, password } = userState
 
+  const id = props.match.params.id
+
   const displayUser = async (e) => {
-    const get = await getUser(props.match.params.id)
+    const get = await getUser(id)
     userSetState({
       ...userState,
       firstName: get.firstName,
       lastName: get.lastName,
       email: get.email,
-      password: get.password
+      password: get.password,
+      id: get._id
     })
     console.log(firstName)
   }
@@ -41,11 +44,12 @@ function UserEdit(props) {
 
   let handleSubmit = async (e) => {
     e.preventDefault()
-    const created = await updateUser(userState)
+    const created = await updateUser(id, userState)
+    console.log(created)
   }
 
-  let handleDelete = async (e) => {
-    const deleted = await deleteUser(props.match.params.id)
+  let handleDelete = async () => {
+    const deleted = await deleteUser(id)
   }
 
   return (
@@ -59,8 +63,12 @@ function UserEdit(props) {
           </div>
           <input type='text' name='email' placeholder={email} value={email} onChange={handleEventChange} />
           <input type='password' name='password' placeholder={password} value={password} onChange={handleEventChange} />
-          <Link to={`/userByEmail/${email}`}><button className='update-btn' onClick={handleSubmit}>UPDATE</button></Link>
-          <Link to='/'><button className='delete-btn' onClick={handleDelete}>DELETE USER</button></Link>
+          <Link to={`/users/${id}`}>
+            <button className='update-btn' onClick={handleSubmit}>UPDATE</button>
+          </Link>
+          <Link to='/'>
+            <button className='delete-btn' onClick={handleDelete}>DELETE USER</button>
+          </Link>
         </form>
       </div>
     </Layout>
