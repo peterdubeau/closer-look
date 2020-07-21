@@ -38,7 +38,7 @@ export default function ProductCards(props) {
   return (
     <div className="product-cards">
       {props.component.map(product =>
-        <Link to={`/api/products/:${product.id}`}>
+        <Link to={`/api/products/:${product._id}`}>
           <div className='product'>
             <img className="product-img" src={product.imgURL} />
             <div className ='brand-info'>
