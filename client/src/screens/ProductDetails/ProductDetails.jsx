@@ -11,7 +11,7 @@ export default function ProductDetails() {
                 <div className="search-bar"></div>
                 <div className='product-and-brand-container'>
                     <div className="product-details"><ProductDetail /></div>
-                    {/* <div className="brand-details"><BrandDetails /></div> */}
+                    <div className="brand-details"><BrandDetails /></div>
                 </div>
             </Layout>
         </>
