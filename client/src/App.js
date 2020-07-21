@@ -13,9 +13,9 @@ import Home from './screens/Home/Home'
 function App() {
   return (
     <div className="app">
-      {/* <Route path='/' exact>
+      <Route path='/' exact>
         <LoginSignUp />
-      </Route> */}
+      </Route>
       <Route path='/' exact>
         <Home />
       </Route> 

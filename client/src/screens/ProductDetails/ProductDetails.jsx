@@ -1,8 +1,8 @@
 import React from 'react'
 import './ProductDetails.css'
 import Layout from '../../components/shared/Layout/Layout'
-import ProductDetails from '../../components/ProductDetails'
-import BrandDetails from '../../components/BrandDetails'
+import ProductDetail from '../../components/ProductDetail/ProductDetail'
+import BrandDetails from '../../components/BrandDetails/BrandDetails'
 
 export default function ProductDetails() {
     return (
@@ -10,7 +10,7 @@ export default function ProductDetails() {
             <Layout>
                 <div className="search-bar"></div>
                 <div className='product-and-brand-container'>
-                    <div className="product-details"><ProductDetails /></div>
+                    <div className="product-details"><ProductDetail /></div>
                     <div className="brand-details"><BrandDetails /></div>
                 </div>
             </Layout>
