@@ -2,14 +2,20 @@ import React, { Component } from 'react'
 import './Header.css'
 import Hamburger from '../../../assets/images/HamburgerMenu.png'
 import Search from '../../../assets/images/SearchIcon.png'
+import User from '../../../assets/images/UserIcon.png'
+import { Link } from 'react-router-dom'
+
 
 export default class Header extends Component {
     render() {
         return (
             <div className='header'>
                 <img className='hamburger' src={Hamburger}/>
-                <h1>CLOSER LOOK</h1>
+                <Link className='home-link' to='/'>
+                    <h1>CLOSER LOOK</h1>
+                </Link>
                 <img className='search' src={Search}/>
+                <img className='user' src={User} />
             </div>
         )
     }

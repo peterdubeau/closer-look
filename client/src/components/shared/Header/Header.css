@@ -27,5 +27,12 @@
 }
 
 .search {
-    margin-left: 700px;
+    margin-left: 690px;
+    margin-right: 10px;
+}
+
+.user {
+    height: 35px;
+    width: auto;
+    margin: 40px 25px 0px 20px;
 }
