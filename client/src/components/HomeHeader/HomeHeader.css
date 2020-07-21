@@ -1,7 +1,7 @@
 .home-header {
     display: flex;
     align-items: center;
-    height: 105px;
+    height: 245px;
     width: 95%;
     margin: 0 auto;
     border-bottom-left-radius: 10px;
@@ -10,26 +10,26 @@
     box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.12);
 }
 
+.closer-look {
+}
+
 .home-header h1 {
-    display: flex;
-    align-items: center;
     color: #1e789c;
-    font-size: 45px;
+    font-size: 90px;
     font-weight: 400;
     line-height: 1;
-    margin-left: 15px;
     font-family: 'Changa One', cursive;
 }
 
 .home-header h3 {
-    
+
 }
 
-.hamburger {
+.home-hamburger {
    margin-left: 20px;
    margin-right: 25px;
 }
 
-.search {
+/* .search {
     margin-left: 700px;
-}
+} */

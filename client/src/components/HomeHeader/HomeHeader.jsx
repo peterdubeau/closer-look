@@ -8,12 +8,12 @@ export default class Header extends Component {
     render() {
         return (
             <div className='home-header'>
-                <img className='hamburger' src={Hamburger} />
-                <div>
+                <img className='home-hamburger' src={Hamburger} />
+                <div className='closer-look'>
                     <h1>CLOSER LOOK</h1>
                     <h3>find out more about the products you love.</h3>
                 </div>
-                <img className='search' src={Search} />
+                <img className='home-search' src={Search} />
             </div>
         )
     }
