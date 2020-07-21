@@ -1,6 +1,5 @@
 .home-header {
     display: flex;
-    align-items: center;
     height: 245px;
     width: 95%;
     margin: 0 auto;
@@ -11,6 +10,7 @@
 }
 
 .closer-look {
+    margin: 0 auto;
 }
 
 .home-header h1 {
@@ -19,17 +19,31 @@
     font-weight: 400;
     line-height: 1;
     font-family: 'Changa One', cursive;
+    margin-bottom: 10px;
 }
 
 .home-header h3 {
-
+    font-size: 25px;
+    line-height: 1.22;
+    font-weight: 300;
+    color: #4c7586;
+    text-align: center;
+    text-transform: uppercase;
+    width: 350px;
+    margin: 0 auto;
 }
 
 .home-hamburger {
-   margin-left: 20px;
-   margin-right: 25px;
+    align-self: flex-start;
+    margin-left: 20px;
+    margin-right: 25px;
 }
 
-/* .search {
-    margin-left: 700px;
-} */
+.home-search {
+    align-self: flex-start;
+}
+
+.home-user {
+    align-self: flex-start;
+    height: 35px;
+}

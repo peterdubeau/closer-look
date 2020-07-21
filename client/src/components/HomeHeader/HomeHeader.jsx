@@ -14,6 +14,7 @@ export default class Header extends Component {
                     <h3>find out more about the products you love.</h3>
                 </div>
                 <img className='home-search' src={Search} />
+                <img className='home-user' src={User} />
             </div>
         )
     }
