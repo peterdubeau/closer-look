@@ -41,8 +41,10 @@ export default function ProductCards(props) {
         <Link to={`/api/products/:${product.id}`}>
           <div className='product'>
             <img className="product-img" src={product.imgURL} />
-            <div className="product-brand">{product.brandName}</div>
-            <div className="product-info">{product.info}</div>
+            <div className ='brand-info'>
+              <p className="product-brand">{product.brandName}</p>
+              <p className="product-info">{product.info}</p>
+            </div>
           </div>
         </Link>)}
     </div>

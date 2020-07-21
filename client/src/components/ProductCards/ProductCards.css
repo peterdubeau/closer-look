@@ -10,8 +10,16 @@
   color: #4c7586;
 }
 
+.product {
+  display: flex;
+}
+
 .product-img {
   width: 120px;
+}
+
+.brand-info {
+  text-transform: uppercase;
 }
 
 .product-info {
