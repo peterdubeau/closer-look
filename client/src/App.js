@@ -4,7 +4,7 @@ import { Route } from 'react-router-dom'
 import UserEdit from './components/UserEdit/UserEdit'
 import User from './screens/User/User'
 import SearchResults from './screens/SearchResults/SearchResults'
-import ProductDetails from './components/ProductDetails/ProductDetails'
+import ProductDetails from './screens/ProductDetails/ProductDetails'
 import Home from './screens/Home/Home'
 // import LoginSignUp from './screens/LoginSignUp/LoginSignUp'
 // import ProductCards from './components/ProductCards/ProductCards';
@@ -13,9 +13,9 @@ import Home from './screens/Home/Home'
 function App() {
   return (
     <div className="app">
-      <Route path='/' exact>
+      {/* <Route path='/' exact>
         <LoginSignUp />
-      </Route>
+      </Route> */}
       <Route path='/' exact>
         <Home />
       </Route> 
