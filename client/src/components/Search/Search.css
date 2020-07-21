@@ -6,16 +6,18 @@
 .search-div {
   display: flex;
   align-items: center;
-  justify-content: center;
   width: 635px;
   height: 45px;
   border-radius: 6px;
   box-shadow: 1px 1px 4px 0 rgba(100, 51, 51, 0.12);
   border: solid 2px  #4c7586;
   margin: 0 auto;
-  /* background: url('../../assets/images/SearchIcon.png');
-  background-repeat: no-repeat;
-  background-position: 20px; */
+  margin-bottom: 50px;
+}
+
+.search-image {
+  margin-left: 20px;
+  margin-right: 45px;
 }
 
 .search-input {
@@ -38,3 +40,4 @@
 .search-input:focus::placeholder {
   color: transparent;
 }
+
