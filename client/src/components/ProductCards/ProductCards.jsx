@@ -26,7 +26,7 @@ export default function ProductCards(props) {
       info: get.info,
       id: get._id
     })
-    console.log(get)
+    console.log(id)
   }
   useEffect(() => {
     displayProduct()
@@ -41,7 +41,7 @@ console.log(props.component)
   return (
     <div className="product-cards">
       {props.component.map(product =>
-        <Link className="product" to={`/api/products/:${product.id}`}>
+        <Link className="product" to={`/api/products/:${product._id}`}>
           <img className="product-image" src={product.imgURL} />
           <div className="product-brand">{product.brandName}</div>
           <div className="product-info">{product.info}</div>

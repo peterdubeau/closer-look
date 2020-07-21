@@ -4,7 +4,7 @@ import { Route } from 'react-router-dom'
 import UserEdit from './components/UserEdit/UserEdit'
 import User from './screens/User/User'
 import SearchResults from './screens/SearchResults/SearchResults'
-import ProductDetails from './components/ProductDetails/ProductDetails'
+import ProductDetails from './screens/ProductDetails/ProductDetails'
 // import LoginSignUp from './screens/LoginSignUp/LoginSignUp'
 // import ProductCards from './components/ProductCards/ProductCards';
 
@@ -18,7 +18,7 @@ function App() {
       <Route path='/api/users/:id'>
         <UserEdit component={User}/>
       </Route>
-      <Route path='/api/products'>
+      <Route path='/api/products' exact>
         <SearchResults />
       </Route>
       <Route path='/api/products/:id'>

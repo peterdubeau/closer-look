@@ -30,7 +30,7 @@ function UserEdit(props) {
       lastName: get.lastName,
       email: get.email,
       password: get.password,
-      id: get._id
+      id: get.id
     })
     console.log(firstName)
   }
