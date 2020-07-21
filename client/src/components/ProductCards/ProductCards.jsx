@@ -5,12 +5,12 @@ import { getProducts } from '../../services/products'
 
 export default function ProductCards(props) {
 
-    const initialState = {
-      imgURL: '',
-      brandName: '',
-      info: '',
-      id:''
-    }
+  const initialState = {
+    imgURL: '',
+    brandName: '',
+    info: '',
+    id: ''
+  }
 
   const [userState, userSetState] = useState(initialState)
 
@@ -26,7 +26,6 @@ export default function ProductCards(props) {
       info: get.info,
       id: get._id
     })
-    console.log(id)
   }
   useEffect(() => {
     displayProduct()
@@ -35,19 +34,23 @@ export default function ProductCards(props) {
   function handleEventChange(e) {
     userSetState({ ...userState, [e.target.name]: e.target.value })
   }
-// console.log(userState)
-console.log(props.component)
 
   return (
     <div className="product-cards">
       {props.component.map(product =>
-        <Link className="product" to={`/api/products/${product._id}`}>
-          <img className="product-image" src={product.imgURL} />
-          <div className="product-brand">{product.brandName}</div>
-          <div className="product-info">{product.info}</div>
+        <Link to={`/api/products/${product._id}`}>
+          <div className='product'>
+            <img className="product-img" src={product.imgURL} />
+            <div className ='brand-info'>
+              <p className="product-brand">{product.brandName}</p>
+              <p className="product-info">{product.info}</p>
+            </div>
+          </div>
+          <hr className='product-hr'/>
         </Link>)}
-        </div>
-    )
-  }
+        
+    </div>
+  )
+}
 
 

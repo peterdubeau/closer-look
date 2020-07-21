@@ -9,7 +9,8 @@ const Product = new productSchema(
     imgURL: { type: String, required: true },
     people: { type: Boolean, required: true },
     planet: { type: Boolean, required: true },
-    animals: { type: Boolean, required: true }
+    animals: { type: Boolean, required: true },
+    type: { type: String, required: true }
   },
   { timestamps: true }
 )
