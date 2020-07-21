@@ -41,16 +41,15 @@ Digital assets used with full licensing and permission from [Death to Stock Phot
 
 ## MVP
 
-_The **Closer Look** MVP is for user’s to be able to create an account with a name and password and be able to have their preferences be displayed every time that they log in._
+_The goal for our **Closer Look** MVP is for users to be able to create an account by providing their e-mail address, name & password, and to be able to save, update, or delete their account information for future use of the site._
 
 <br>
 
 ### Goals
 
-- _Create a user 'sign-in' page_
-- _Create a user 'create account' page_
-- _Create a user profile page with CRUD features_
-- _CSS & Styling for all pages_
+- _Create a user 'log-in / sign-up' page in order to create a new account, or log-in to an account that has already been created._
+- _Create a user profile page with CRUD features._
+- _Use CSS for styling of all pages._
 
 [Trello](https://trello.com/b/rfMtm7ni/team-purple)
 
@@ -75,47 +74,46 @@ _The **Closer Look** MVP is for user’s to be able to create an account with a 
 
 #### Wireframes
 
-[Click Here](https://app.zeplin.io/project/5ef50be43a1c1da368f2178d/dashboard?sid=5ef50d3cdef8c09dd98bcf3e)
+[Site Wireframes on Zeplin](https://app.zeplin.io/project/5ef50be43a1c1da368f2178d/dashboard?sid=5ef50d3cdef8c09dd98bcf3e)
 
-- The team’s Zeplin file of all frameworks for the site.
+- The team’s Zeplin file of the mock-ups and frameworks of the website.
 
 
 #### Component Hierarchy
 
+- Within the folder for our overall application, the frontend will be built with ReactJS and will be held in the 'client' folder.  
+
+- Inside the 'client' folder, the folder 'src' will hold our components, screens, and any assets used to make up the app's front end, structured as per below:
 
 ``` structure
 
 src
 |__ assets/
       |__ fonts
-      |__ graphics
       |__ images
       |__ mockups
-
-|_ src
-      |__ components/
-            |__ Login.jsx
-            |__ UserProfile.jsx
-            |__ BrandDetails.jsx
-            |__ BrandList.jsx
-            |__ CreateUser.jsx
-            |__ EditUser.jsx
-            |__ shared/
-                  |__ Header.jsx
-                  |__ Layout.jsx
-                  |__ Footer.jsx
-                  |__ Nav.jsx
-      |_ screens/
-            |__ Login/Sign-up.jsx
-            |__ User.jsx
-            |__ Home.jsx
-            |__ BrandDetails
-      |__ services/
-            |__ apiConfig.js
-            |__ brands.js
-            |__ users.js
-      |__ utils/      
-            |__ search.jsx
+|__ components/
+      |__ Login.jsx
+      |__ UserEdit.jsx
+      |__ UserCreate.jsx           
+      |__ UserProfile.jsx
+      |__ BrandDetails.jsx
+      |__ ProductDetails.jsx
+      |__ shared/
+            |__ Header.jsx
+            |__ Layout.jsx
+            |__ Nav.jsx
+|_ screens/
+      |__ User.jsx
+      |__ Home.jsx
+      |__ LoginSignUp.jsx 
+      |__ ProductDetails.jsx      
+|__ services/
+      |__ apiConfig.js
+      |__ products.js            
+      |__ users.js
+|__ utils/      
+      |__ search.js
 
 ```
 
@@ -124,15 +122,15 @@ src
 
 |  Component   |    Type    | state | props | Description                                                      |
 | :----------: | :--------: | :---: | :---: | :--------------------------------------------------------------- |
-|    Header    | functional |   n   |   n   | _The header will contain the navigation and logo._               |
-|  Navigation  | functional |   n   |   n   | _The navigation will provide a link to each of the pages._       |
-|    Login     | functional |   y   |   n   | _will allow the user to sign into their account_      |
-|  create user | functional |   n   |   y   | _frames each screen with header, nav and footer._ |               |
-| User-profile | functional |   n   |   n   | _will allow the user to to create an account._
-|Brand Details |   class    |   n   |   n   | _will display relevant brand info to user ._ |
-| Brand List   |   class    |   n   |   n   | _will display list of brands that match user criteria._ |
-|    Search    | functional |   n   |   n   | _allows users to search by brand or cause._ |
-|    Footer    | functional |   n   |   n   | _The footer will show info about me and a link to my portfolio._ |
+| Header    | functional |   n   |   n   | _will contain the navigation component and logo._      |
+| Navigation  | functional |   n   |   n   | _will contain links to each page in order to navigate views within the app_   |
+| LoginSignUp  | functional |   y   |   n   | _will allow the user to log-in to their account, or sign up for an account if they haven't yet created one._ |
+| Layout | functional |   n   |   y   | _controls the layout of each screen, containing header and nav._                |
+| User | functional |   n   |   n   | _will allow the user to to create an account._
+| Brand Details |   class    |   n   |   n   | _will display relevant brand info relative to each product._ |
+| Product Details  |   class    |   n   |   n   | _will display products based on user criteria._ |
+| Search    | functional |   n   |   n   | _allows users to search within the app/site for products._ |
+
 
 #### Component Estimates
 
@@ -155,6 +153,8 @@ src
 
 ### Server (Back End)
 
+- A server will be set up in order to host/store product and user information.  W
+
 #### ERD Model
 
 [Whimsical Diagram](https://whimsical.com/Nbux4P1h5U1W6bPUfieNbH)
@@ -176,16 +176,17 @@ database_db
 
 ## Post-MVP
 
-- _Have working generic controller actions for full-CRUD using Express, Mongoose, and MongoDB. in order to implement the user and password function and the users' data._
-- _Create an API of objects of products._
-- _Create a React app with components to display and filter the brands, products and social issues of the users' choice._
+- _Have working generic controller actions for full-CRUD using Express, Mongoose, and MongoDB in order to implement user / password functions and store product and user data._
+- _Create an API of objects representing products for sale, and users of the site._
+- _Create a React app with components to be displayed within each screen, allowing users to view products while displaying information about each product's brand and their potential impact on, or relationship to, various societal, social, and environmental issues._
 
 ***
 
 ## Code Showcase
 
-> This section will contain brief code snippets of functionality we are proud of, along with a brief description.
+> This section will contain brief code snippets of functionality we are proud of, along with a brief description.  For example, if you look very closely, LoginSignUp has been Very Strategically Capitalized.
+
 
 ## Code Issues & Resolutions
 
-> This section will catalog any major issues encountered and their resolution.
+> This section will catalog any major issues encountered and their resolution.  For example, LoginSignUp continues to be Very Strategically CapitaliZed. ;-)
