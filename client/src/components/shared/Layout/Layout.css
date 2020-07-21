@@ -10,3 +10,7 @@
     flex: 2;
     padding: 100px;
 }
+
+a {
+    text-decoration: none;
+}
