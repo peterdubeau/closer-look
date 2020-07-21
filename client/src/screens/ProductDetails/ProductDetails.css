@@ -5,7 +5,8 @@
 
 .product-and-brand-container {
   display: flex;
-  align-items: center;
+  flex-flow: row nowrap;
+  align-items: stretch;
 }
 
 
