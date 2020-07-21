@@ -3,28 +3,38 @@
   justify-content: center;
 }
 
-.search-input {
-  width: 633px;
-  height: 53px;
+.search-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 635px;
+  height: 45px;
   border-radius: 6px;
   box-shadow: 1px 1px 4px 0 rgba(100, 51, 51, 0.12);
   border: solid 2px  #4c7586;
-  background: url('https://res.cloudinary.com/darnycya/image/upload/v1595343529/SearchBar_easvhr.png') no-repeat;
-  /* background-color: rgba(255, 255, 255, 0.96); */
+  margin: 0 auto;
+  /* background: url('../../assets/images/SearchIcon.png');
+  background-repeat: no-repeat;
+  background-position: 20px; */
+}
+
+.search-input {
+  border: none;
+  width: 400px;
+  height: 30px;
+  font-style: italic;
+  font-size: 15px;
+  font-weight: 700;
+  color: #4c7586;
 }
 
 .search-input::placeholder {
-  font-size: 14px;
-  font-weight: 500;
-  font-stretch: normal;
-  font-style: italic;
-  line-height: 1;
-  letter-spacing: normal;
   color: #4c7586;
-  text-indent: 75px;
-
+  font-style: italic;
+  font-size: 15px;
+  font-weight: 700;
 }
 
-/* button {
-  margin-left: -640px;
-} */
+.search-input:focus::placeholder {
+  color: transparent;
+}
