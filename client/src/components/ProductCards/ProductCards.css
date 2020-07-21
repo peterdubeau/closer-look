@@ -1,23 +1,40 @@
-.product-image {
-  width: 120px;
-  height: 120px;
-}
-
 .product-cards {
   display: flex;
-    flex-direction: column;
-    align-items: center;
-    transition: 250ms all;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
-.product-brand {
-    font-family: SFProText-Light;
-    font-size: 15px;
-    line-height: 15;
-    color: #4c7586;
+.product-cards a {
+  text-decoration: none;
+  color: #4c7586;
 }
 
 .product {
-  text-decoration: none;
-  color: #4c7586;
+  display: flex;
+}
+
+.product-img {
+  height: 120px;
+  width: 120px;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.brand-info {
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 5px;
+}
+
+.product-info {
+  font-style: italic;
+  font-weight: 700;
+}
+
+.product-hr {
+  border-top: 3px solid #4c7586;
+  width: 350px;
+  margin-bottom: 20px;
 }
