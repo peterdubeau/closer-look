@@ -16,18 +16,18 @@ const Search = (props) => {
 
 
 
-    return (
+  return (
     <form className="search-form">
-            <input
-                className="search-input"
-                value={props.value}
-                name="Search"
-                placeholder="SEARCH"
-                type="text"
-                autoFocus
-        />
-        </form>
-    )
+      <input
+        className="search-input"
+        value={props.value}
+        name="Search"
+        placeholder="SEARCH"
+        type="text"
+        autoFocus
+      />
+    </form>
+  )
 }
 
 export default Search

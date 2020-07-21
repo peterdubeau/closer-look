@@ -1,9 +1,6 @@
 .search-form {
-  padding-top: 100px;
   display: flex;
-  flex-direction: row;
   justify-content: center;
-  align-items: center;
 }
 
 .search-input {
