@@ -1,0 +1,23 @@
+.product-image {
+  width: 120px;
+  height: 120px;
+}
+
+.product-cards {
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 250ms all;
+}
+
+.product-brand {
+    font-family: SFProText-Light;
+    font-size: 15px;
+    line-height: 15;
+    color: #4c7586;
+}
+
+.product {
+  text-decoration: none;
+  color: #4c7586;
+}

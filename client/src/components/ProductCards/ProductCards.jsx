@@ -26,7 +26,7 @@ export default function ProductCards(props) {
       info: get.info,
       id: get._id
     })
-    // console.log(get)
+    console.log(get)
   }
   useEffect(() => {
     displayProduct()
