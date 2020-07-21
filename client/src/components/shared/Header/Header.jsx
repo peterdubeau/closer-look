@@ -10,12 +10,14 @@ export default class Header extends Component {
     render() {
         return (
             <div className='header'>
-                <img className='hamburger' src={Hamburger}/>
+                <img className='hamburger' src={Hamburger} />
                 <Link className='home-link' to='/'>
                     <h1>CLOSER LOOK</h1>
                 </Link>
-                <img className='search' src={Search}/>
-                <img className='user' src={User} />
+                <img className='search' src={Search} />
+                <Link to= {`api/user/`}>
+                    <img className='user' src={User} />
+                </Link>
             </div>
         )
     }
