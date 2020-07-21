@@ -18,7 +18,7 @@ function App() {
       <Route path='/api/users/:id'>
         <UserEdit component={User}/>
       </Route>
-      <Route path='/api/products'>
+      <Route path='/api/products' exact>
         <SearchResults />
       </Route>
       <Route path='/api/products/:id'>
