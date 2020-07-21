@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-
+  justify-content: space-between;
 }
 
 .product-cards a {
@@ -15,11 +15,14 @@
 }
 
 .product-img {
-  width: 120px;
+  height: 120px;
+  margin-right: 10px;
 }
 
 .brand-info {
   text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 300;
 }
 
 .product-info {
