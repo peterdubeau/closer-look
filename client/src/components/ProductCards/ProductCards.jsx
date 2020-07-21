@@ -26,7 +26,6 @@ export default function ProductCards(props) {
       info: get.info,
       id: get._id
     })
-    console.log(get)
   }
   useEffect(() => {
     displayProduct()
@@ -35,8 +34,6 @@ export default function ProductCards(props) {
   function handleEventChange(e) {
     userSetState({ ...userState, [e.target.name]: e.target.value })
   }
-  // console.log(userState)
-  console.log(props.component)
 
   return (
     <div className="product-cards">
