@@ -46,7 +46,9 @@ export default function ProductCards(props) {
               <p className="product-info">{product.info}</p>
             </div>
           </div>
+          <hr className='product-hr'/>
         </Link>)}
+        
     </div>
   )
 }

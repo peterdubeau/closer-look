@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .product-cards a {
@@ -23,9 +23,16 @@
   text-transform: uppercase;
   font-size: 15px;
   font-weight: 300;
+  line-height: 5px;
 }
 
 .product-info {
   font-style: italic;
   font-weight: 700;
+}
+
+.product-hr {
+  border-top: 3px solid #4c7586;
+  width: 350px;
+  margin-bottom: 20px;
 }
