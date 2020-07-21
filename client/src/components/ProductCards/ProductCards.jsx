@@ -5,12 +5,12 @@ import { getProducts } from '../../services/products'
 
 export default function ProductCards(props) {
 
-    const initialState = {
-      imgURL: '',
-      brandName: '',
-      info: '',
-      id:''
-    }
+  const initialState = {
+    imgURL: '',
+    brandName: '',
+    info: '',
+    id: ''
+  }
 
   const [userState, userSetState] = useState(initialState)
 
@@ -35,8 +35,8 @@ export default function ProductCards(props) {
   function handleEventChange(e) {
     userSetState({ ...userState, [e.target.name]: e.target.value })
   }
-// console.log(userState)
-console.log(props.component)
+  // console.log(userState)
+  console.log(props.component)
 
   return (
     <div className="product-cards">
@@ -46,8 +46,8 @@ console.log(props.component)
           <div className="product-brand">{product.brandName}</div>
           <div className="product-info">{product.info}</div>
         </Link>)}
-        </div>
-    )
-  }
+    </div>
+  )
+}
 
 
