@@ -1,11 +1,18 @@
 import React from 'react'
 import './BrandDetails.css'
+import People from '../../assets/images/People.png'
+import Animal from '../../assets/images/Animal.png'
+import Globe from '../../assets/images/Globe.png'
+
+
 export default function BrandDetails() {
   return (
-  <div className="cause-card">
-      <img className="people" src={} />
-      <img className="planet" src={} />
-      <img className="animals" src={} />
+    <div className="cause-card">
+      <div className="cause-icon-container">
+        <img className="cause-icon" id='people' src={People} />
+        <img className="cause-icon" id='planet' src={Globe} />
+        <img className="cause-icon" it='animal' src={Animal} />
+      </div>
     <div className ="cause-details">
       <h3>CLIMATE</h3>
       <p>This product contributes to climate change in the production and use of pretroleum products.</p>
