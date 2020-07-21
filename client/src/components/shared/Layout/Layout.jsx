@@ -6,7 +6,7 @@ import HomeHeader from '../../HomeHeader/HomeHeader'
 export default function Layout(props) {
     let page = window.location.pathname
 
-    if ( page = '/' ) {
+    if ( page === '/' ) {
         return (
             <div className='layout'>
                 <HomeHeader />

@@ -35,15 +35,17 @@
 
 .home-hamburger {
     align-self: flex-start;
-    margin-left: 20px;
-    margin-right: 25px;
+    margin: 40px 25px 0px 20px;
 }
 
 .home-search {
     align-self: flex-start;
+    height: 30px;
+    margin: 40px 0px 0px 20px;
 }
 
 .home-user {
     align-self: flex-start;
     height: 35px;
+    margin: 40px 25px 0px 20px;
 }
