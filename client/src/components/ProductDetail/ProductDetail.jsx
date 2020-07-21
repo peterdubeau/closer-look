@@ -1,10 +1,10 @@
 import React from 'react'
-import './ProductDetails.css'
+import './ProductDetail.css'
 
-export default function ProductDetails() {
+export default function ProductDetail() {
     return (
             <div className='product-details'>
-                <h3>{brandName}</h3>
+                <h3>ok</h3>
                 <h4><em>{info}</em></h4>
                 <img src='null' />
                 <div className="horizontal-line"></div>
