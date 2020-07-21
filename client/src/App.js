@@ -5,7 +5,6 @@ import { Route } from 'react-router-dom'
 import UserEdit from './components/UserEdit/UserEdit'
 import User from './screens/User/User'
 import SearchResults from './screens/SearchResults/SearchResults'
-import Search from './components/Search/Search'
 // import ProductCards from './components/ProductCards/ProductCards';
 
 
@@ -21,10 +20,6 @@ function App() {
       <Route path='/api/products'>
         <SearchResults />
       </Route>
-      <Route path='/search'>
-        <Search />
-      </Route>
-
     </div>
   );
 }
