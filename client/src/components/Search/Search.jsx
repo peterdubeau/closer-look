@@ -1,5 +1,6 @@
 import React from 'react'
 import './Search.css'
+import img from '../../assets/images/SearchIcon.png'
 
 const Search = (props) => {
 
@@ -16,18 +17,21 @@ const Search = (props) => {
 
 
 
-    return (
-    <form className="search-form">
-            <input
-                className="search-input"
-                value={props.value}
-                name="Search"
-                placeholder="SEARCH"
-                type="text"
-                autoFocus
+  return (
+    <div className='search-div'>
+      <img className='search-image' src={img}/>
+      <form className="search-form">
+        <input
+          className="search-input"
+          value={props.value}
+          name="Search"
+          placeholder='SEARCH'
+          type="text"
+          autoFocus
         />
-        </form>
-    )
+      </form>
+    </div>
+  )
 }
 
 export default Search
