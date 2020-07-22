@@ -6,6 +6,8 @@ import HangerIcon from "../../assets/images/HangerIcon.png"
 import ShoeIcon from "../../assets/images/ShoeIcon.png"
 import PurseIcon from "../../assets/images/PurseIcon.png"
 
+import RealHeader from '../../components/HomeHeader/HomeHeader'
+
 const Home = () => {
   return (
     <Layout>
