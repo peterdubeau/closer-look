@@ -168,7 +168,170 @@ const main = async () => {
         "planet": true,
       "animals": true,
       "type": "tops"
-      }
+      },
+      {
+        "brandName": "New Balance",
+        "info": "860 v10",
+        "imgURL": "https://ffecom.s3.amazonaws.com/New-Balance/w860d10_2.jpg",
+        "people": true,
+        "planet": true,
+        "animals": false,
+        "type": "sneakers"
+      },
+    {
+      "brandName": "Nike",
+      "info": "Air Max 270 Shoes",
+      "imgURL": "https://dks.scene7.com/is/image/GolfGalaxy/18NIKWRMX270XXXXXLFS_Pink_Orange_Black?qlt=70&wid=600&fmt=pjpeg",
+      "people": false,
+      "planet": false,
+      "animals": false,
+      "type": "sneakers"
+    },
+    {
+      "brandName": "Adidas",
+      "info": "YeezyBoost 350 V2 Zebra",
+      "imgURL": "https://stockx-360.imgix.net//Adidas-Yeezy-Boost-350-V2-Zebra/Images/Adidas-Yeezy-Boost-350-V2-Zebra/Lv2/img01.jpg?auto=format,compress&w=559&q=90&dpr=2&updated_at=1578503931",
+      "people": false,
+      "planet": true,
+      "animals": false,
+      "type": "sneakers"
+    },
+    {
+      "brandName": "Reebok",
+      "info": "DMX Series 1200",
+      "imgURL": "https://cdn.runrepeat.com/i/reebok/31720/chaussures-reebok-dmx-series-1200-blanc-gris-bleu-vert-citron-9c01-600.jpg",
+      "people": false,
+      "planet": false,
+      "animals": true,
+      "type": "sneakers"
+    },
+    {
+      "brandName": "Aldo",
+      "info": "Fashion Sneaker",
+      "imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQBRjn08EXK_yPIys2nBWVX-uEdlheIWKuopg&usqp=CAU",
+      "people": true,
+      "planet": true,
+      "animals": true,
+      "type": "sneakers"
+      
+    },
+    {
+        "brandName": "Aldo",
+        "info": "Dwiedia Black Textile Neoprene",
+        "imgURL": "https://media.aldoshoes.com/v3/product/dwiedia/009-003-030/dwiedia_black_009-003-030_main_sq_gy_1200x1200.jpg",
+        "people": true,
+        "planet": true,
+      "animals": true,
+      "type": "sneakers"
+  },
+  {
+    "brandName": "Gucci",
+    "info": "GG Marmont Round Mini",
+    "imgURL": "https://image.s5a.com/is/image/saks/0400099777481",
+    "people": true,
+    "planet": true,
+    "animals": false,
+    "type": "bags"
+  },
+{
+  "brandName": "Prada",
+  "info": "Medium Galleria Tote Bag",
+  "imgURL": "https://images.neimanmarcus.com/ca/14/product_assets/L/6/5/Q/B/NML65QB_bz.jpg",
+  "people": false,
+  "planet": false,
+  "animals": false,
+  "type": "bags"
+},
+{
+  "brandName": "Christian Dior",
+  "info": "Dior Book Tote",
+  "imgURL": "https://wwws.dior.com/couture/ecommerce/media/catalog/product/cache/1/zoom_image_1/3000x2000/17f82f742ffe127f42dca9de82fb58b1/I/H/1592930701_M1286ZRIW_M928_E01_ZH.jpg",
+  "people": false,
+  "planet": true,
+  "animals": false,
+  "type": "bags"
+},
+{
+  "brandName": "Balenciaga",
+  "info": "Graffiti Classic City",
+  "imgURL": "https://cdn-images.farfetch-contents.com/12/51/32/15/12513215_13660422_1000.jpg",
+  "people": false,
+  "planet": false,
+  "animals": true,
+  "type": "bags"
+},
+{
+  "brandName": "Coach",
+  "info": "Tote Bag",
+  "imgURL": "https://www.outletcoachfactorystores.com/1936-large_default/handbags-coach-2010-collection.jpg",
+  "people": true,
+  "planet": true,
+  "animals": true,
+  "type": "bags"
+},
+{
+    "brandName": "Coach",
+    "info": "Mini Bag",
+    "imgURL": "https://mp-media.reebonz.com/images/p-f3/reebonz-coach-shoulder-bag-coach-1-f3476fd1-4d61-44b3-b8e5-d743906171c4.jpg;mode=pad;bgcolor=fff;404=404.jpg;width=402;height=500;quality=100",
+    "people": true,
+    "planet": true,
+  "animals": true,
+  "type": "bags"
+  },
+  {
+    "brandName": "True Religion",
+    "info": "Double Puff Graphic Tee",
+    "imgURL": "https://slimages.macysassets.com/is/image/MCY/products/0/optimized/3503830_fpx.tif?op_sharpen=1&wid=500&hei=613&fit=fit,1&$filtersm$",
+    "people": false,
+    "planet": false,
+    "animals": false,
+    "type": "tops"
+  },
+{
+  "brandName": "Bklynciaga",
+  "info": "BOL",
+  "imgURL": "https://cdn.shopify.com/s/files/1/0074/2961/9776/products/4_1f3ab1e7-903c-4406-90e4-66c88ff128a9_1024x.png?v=1575070225",
+  "people": true,
+  "planet": true,
+  "animals": true,
+  "type": "tops"
+},
+{
+  "brandName": "Bklynciaga",
+  "info": "Born",
+  "imgURL": "https://cdn.shopify.com/s/files/1/0074/2961/9776/products/6_bd3e4c6c-fafc-43c2-a12b-a07ba75bf62f_1024x.png?v=1575115392",
+  "people": true,
+  "planet": true,
+  "animals": true,
+  "type": "tops"
+},
+{
+  "brandName": "Nike",
+  "info": "Essential Crop Top",
+  "imgURL": "https://i3.stycdn.net/images/2018/06/23/article/nike/kt5569504/nike-essential-crop-w-crop-top-weiss-1600-zoom-0.jpg",
+  "people": false,
+  "planet": false,
+  "animals": true,
+  "type": "tops"
+},
+{
+  "brandName": "Tier",
+  "info": "Black Tier University Crewneck",
+  "imgURL": "https://i.pinimg.com/originals/42/17/c8/4217c809d681f6330784cb397b53a736.jpg",
+  "people": true,
+  "planet": true,
+  "animals": true,
+  "type": "top"
+},
+{
+    "brandName": "Tier",
+    "info": "2-Tone Flannel",
+    "imgURL": "https://images.squarespace-cdn.com/content/v1/54d988d4e4b0fc865498644f/1577403708238-CA53AGM4YQNAAMN1U1IH/ke17ZwdGBToddI8pDm48kG4aVxWqcIz1rFmxtuIibxZZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZamWLI2zvYWH8K3-s_4yszcp2ryTI0HqTOaaUohrI8PI_HFK3booLHQBTCB-aeDcs3_nN5arWf4uoPd-AU7l-g4KMshLAGzx4R3EDFOm1kBS/artboard+6+copy.JPG",
+    "people": true,
+    "planet": true,
+  "animals": true,
+  "type": "tops"
+  }
     
         ]
 
