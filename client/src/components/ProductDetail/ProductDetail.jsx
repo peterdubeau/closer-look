@@ -40,7 +40,7 @@ function ProductDetail(props) {
                 <h4>{info}</h4>
                 <img className='product-image' src={imgURL} />
                 <div className="horizontal-line"></div>
-
+      
             </div>
         )
 }

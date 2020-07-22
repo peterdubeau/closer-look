@@ -38,3 +38,11 @@
   width: 350px;
   margin-bottom: 20px;
 }
+
+.true{
+  border: 2px solid green
+}
+
+.false{
+  border: 2px solid red;
+}

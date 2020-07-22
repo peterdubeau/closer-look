@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom'
 import './ProductCards.css';
 import { getProducts } from '../../services/products'
+import Animal from '../../assets/images/Animal.png'
 
 export default function ProductCards(props) {
 
@@ -9,12 +10,13 @@ export default function ProductCards(props) {
     imgURL: '',
     brandName: '',
     info: '',
-    id: ''
+    id: '',
+    animals: ''
   }
 
   const [userState, userSetState] = useState(initialState)
 
-  const { imgURL, brandName, info, id } = userState
+  const { imgURL, brandName, info, id, animals } = userState
 
 
   const displayProduct = async (e) => {
@@ -35,6 +37,8 @@ export default function ProductCards(props) {
     userSetState({ ...userState, [e.target.name]: e.target.value })
   }
 
+  
+
   return (
     <div className="product-cards">
       {props.component.map(product =>
@@ -44,6 +48,7 @@ export default function ProductCards(props) {
             <div className ='brand-info'>
               <p className="product-brand">{product.brandName}</p>
               <p className="product-info">{product.info}</p>
+              <img className={``} src={Animal}/>
             </div>
           </div>
           <hr className='product-hr'/>
