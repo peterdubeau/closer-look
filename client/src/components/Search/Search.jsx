@@ -1,81 +1,59 @@
-import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
+import React, { useState, useEffect } from 'react'
+import { Link, withRouter } from 'react-router-dom'
 import './Search.css'
 import img from '../../assets/images/SearchIcon.png'
+import { getProducts } from '../../services/products'
 
 
 
-const Search = () => {
 
-  const [data, setData] = useState({
+function Search(props) {
+
+  const initialState = {
     products: [],
-    type: "",
-    search: "",
-    results: [],
-    searched: false,
-  });
-  
-  const { products, type, search, results, searched } = data;
+    queriedProducts: [],
+    inputValue: '',
+    type: ''
+  }
 
-  const loadProducts = () => {
-    getProducts().then(data => {
-      if (data.error) {
-        console.log(data.error);
-      } else {
-        setData({ ...data, products: data });
-      }
-    });
-  };
-  
-  useEffect(() => {
-    loadProducts();
-  }, []);
+  const [searchState, searchSetState] = useState(initialState)
 
-  const searchData = () => {
-    if (search) {
-      list({ search: search || undefined, type: type }).then(
-        response => {
-          if (response.error) {
-            console.log(response.error);
-          } else {
-            setData({ ...data, results: response, searched: true });
-          }
-        }
-      );
+  const { products, queriedProducts, inputValue } = searchState
+
+  const handleChange = (e) => {
+    searchSetState({ ...searchState, [e.target.name]: e.target.value })
     }
-  };
+    
+ 
 
-
-  const searchSubmit = e => {
-    e.preventDefault();
-    searchData();
-
-  };
-
-  const handleChange = name => event => {
-    setData({ ...data, [name]: event.target.value, searched: false });
-  };
+  const handleSubmit = (event) => {
+    event.preventDefault()
+    props.history.push(`/api/products/search/${inputValue}`)
+  }
   
-  const searchedProducts = (results = []) => {
-    return (
+
+  return (
+
+     
       <div className='search-div'>
-        <img onClick={callSearchFunction} type="submit" value="SEARCH" src={img} />
-        <form className="search-form">
-          <Link to={`/products/${searchState.searchText}`}><input
+        <img type="submit" value="SEARCH" src={img} />
+        <form onSubmit={handleSubmit} className="search-form">
+          <input
             className="search-input"
-            value={searchValue}
-            onChange={handleSearchInputChanges}
-            name="Search"
+            value={inputValue}
+            onChange={handleChange}
+            name="inputValue"
             placeholder='SEARCH'
             type="text"
             autoFocus
-          /></Link>
+          />
         </form>
       </div>
        
     )
   }
-}
 
-export default Search
 
+
+
+  export default withRouter(Search)

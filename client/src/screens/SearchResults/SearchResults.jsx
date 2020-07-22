@@ -3,16 +3,25 @@ import ProductCards from '../../components/ProductCards/ProductCards';
 import Layout from '../../components/shared/Layout/Layout'
 import Search from '../../components/Search/Search'
 import { getProducts } from '../../services/products'
+import { withRouter } from 'react-router-dom'
  
 
 
-export default function SearchResults() {
+function SearchResults(props) {
+
 
   const [productState, productSetState] = useState([])
-
+  let searchQuery = props.match.params.type
+  console.log(searchQuery)
+  
   const displayProduct = async (e) => {
+    //get.filter type (props.match.params)
+    //bird api react app
+    //props.match.params
+    
     const get = await getProducts()
-    productSetState(get)
+    let things = get.filter(results => results.type === searchQuery)
+    productSetState(things)
   }
 
   useEffect(() => {
@@ -20,7 +29,9 @@ export default function SearchResults() {
   },[])
 
 
+
   return (
+
     
     <Layout>
       <Search />
@@ -30,3 +41,5 @@ export default function SearchResults() {
 
   )
 }
+
+export default withRouter(SearchResults) 
