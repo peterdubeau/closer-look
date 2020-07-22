@@ -2,13 +2,19 @@ import React, { useState, useEffect } from 'react'
 import './ProductDetail.css'
 import { getProduct } from '../../services/products'
 import { withRouter } from 'react-router-dom'
+import Animal from '../../assets/images/Animal.png'
+import People from '../../assets/images/People.png'
+import Globe from '../../assets/images/Globe.png'
 
 function ProductDetail(props) {
 
   const initialState = {
     brandName: '',
     info: '',
-    imgURL: ''
+    imgURL: '',
+    animals: '',
+    people: '',
+    planet: ''
   }
 
   const [productState, productSetState] = useState(initialState)
@@ -22,7 +28,10 @@ function ProductDetail(props) {
       ...productState,
       brandName: get.brandName,
       info: get.info,
-      imgURL: get.imgURL
+      imgURL: get.imgURL,
+      animals: get.animals,
+      people: get.people,
+      planet: get.planet
     })
   }
 
@@ -30,17 +39,18 @@ function ProductDetail(props) {
     displayProduct()
   },[])
 
-  const { brandName, info, imgURL } = productState
+  const { brandName, info, imgURL, people, planet, animals } = productState
 
   
 
     return (
             <div className='product-details'>
-                <h3>{brandName}</h3>
-                <h4>{info}</h4>
-                <img className='product-image' src={imgURL} />
-                <div className="horizontal-line"></div>
-      
+              <h3>{brandName}</h3>
+              <h4>{info}</h4>
+              <img className='product-image' src={imgURL} />
+              <img className={(animals === true ? 'true' : 'false')} src={Animal} />
+              <img className={(people === true ? 'true' : 'false')} src={People} />
+              <img className={(planet === true ? 'true' : 'false') }src={Globe} />
             </div>
         )
 }
