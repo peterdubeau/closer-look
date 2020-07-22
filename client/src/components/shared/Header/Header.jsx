@@ -18,7 +18,9 @@ function Header(props) {
                 <Link className='home-link' to='/'>
                     <h1>CLOSER LOOK</h1>
                 </Link>
-                <img className='search' src={Search} />
+                <div className='search-user'>
+                    <img className='search' src={Search} />
+                </div>
             </div>
         )
     } else {
@@ -28,10 +30,12 @@ function Header(props) {
                 <Link className='home-link' to='/'>
                     <h1>CLOSER LOOK</h1>
                 </Link>
-                <img className='search' src={Search} />
-                <Link to={`/user/${id}`}>
-                    <img className='user' src={User} />
-                </Link>
+                <div className='search-user'>
+                    <img className='search' src={Search} />
+                    <Link to={`/user/${id}`}>
+                        <img className='user' src={User} />
+                    </Link>
+                </div>
             </div>
         )
     }
