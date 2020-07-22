@@ -4,9 +4,27 @@
 }
 
 .product-image{
-  height: 150px;
+  z-index: -1;
+  width: 350px;
+  align-self: center;
 }
 
+.details-hr {
+  border-top: 3px solid #4c7586;
+  width: 90%;
+  margin-bottom: 20px;
+}
+
+.impact-icons-det {
+  display: flex;
+  justify-content: space-between;
+  height: 350px;
+  margin: 0 auto;
+}
+
+.impact-icons-det img {
+  width: 80px;
+}
 
 
 

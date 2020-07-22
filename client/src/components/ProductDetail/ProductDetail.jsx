@@ -48,7 +48,8 @@ function ProductDetail(props) {
       <h3>{brandName}</h3>
       <h4>{info}</h4>
       <img className='product-image' src={imgURL} />
-      <div>
+      <hr className='details-hr'/>
+      <div className='impact-icons-det'>
         <img className={(animals === true ? 'true' : 'false')} src={Animal} />
         <img className={(people === true ? 'true' : 'false')} src={People} />
         <img className={(planet === true ? 'true' : 'false')} src={Globe} />
