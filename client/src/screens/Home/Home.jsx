@@ -16,9 +16,9 @@ const Home = () => {
         <img src={PurseIcon}></img>
       </div>
       <Search />
-      {/* <div className='news-cards'>
-        <img src={NewsCards} />
-      </div> */}
+      <div className='news-cards'>
+        <img id='news' src={NewsCards} />
+      </div>
     </Layout>
   )
 }
