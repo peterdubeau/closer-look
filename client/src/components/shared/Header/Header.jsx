@@ -29,7 +29,7 @@ function Header(props) {
                     <h1>CLOSER LOOK</h1>
                 </Link>
                 <img className='search' src={Search} />
-                <Link to={`api/user/`}>
+                <Link to={`/user/${id}`}>
                     <img className='user' src={User} />
                 </Link>
             </div>
