@@ -1,40 +1,59 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
+import { Link, withRouter } from 'react-router-dom'
 import './Search.css'
 import img from '../../assets/images/SearchIcon.png'
-
-const Search = (props) => {
-
-
-  // handleSearch = event => {
-  //   const sort = () => this.handleSort(this.state.sortType)
-  //   const queriedProducts = this.state.allProducts.filter(product => product.name.toLowerCase().includes(event.target.value.toLowerCase()))
-  //   this.setState({ queriedProducts }, sort)
-  // }
-
-  // handleSubmit = event => event.preventDefault()
+import { getProducts } from '../../services/products'
 
 
 
 
+function Search(props) {
+
+  const initialState = {
+    products: [],
+    queriedProducts: [],
+    inputValue: '',
+    type: ''
+  }
+
+  const [searchState, searchSetState] = useState(initialState)
+
+  const { products, queriedProducts, inputValue } = searchState
+
+  const handleChange = (e) => {
+    searchSetState({ ...searchState, [e.target.name]: e.target.value })
+    }
+    
+ 
+
+  const handleSubmit = (event) => {
+    event.preventDefault()
+    props.history.push(`/api/products/search/${inputValue}`)
+  }
+  
 
   return (
-    <div className='search-div'>
-      <img className='search-image' src={img}/>
-      <form className="search-form">
-        <input
-          className="search-input"
-          value={props.value}
-          name="Search"
-          placeholder='SEARCH'
-          type="text"
-          autoFocus
-        />
-      </form>
-    </div>
-  )
-}
 
-export default Search
+     
+      <div className='search-div'>
+        <img type="submit" value="SEARCH" src={img} />
+        <form onSubmit={handleSubmit} className="search-form">
+          <input
+            className="search-input"
+            value={inputValue}
+            onChange={handleChange}
+            name="inputValue"
+            placeholder='SEARCH'
+            type="text"
+            autoFocus
+          />
+        </form>
+      </div>
+       
+    )
+  }
 
 
 
+
+  export default withRouter(Search)
