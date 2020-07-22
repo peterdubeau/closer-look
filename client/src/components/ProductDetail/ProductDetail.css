@@ -1,6 +1,11 @@
 .product-details {
   display: flex;
   flex-direction: column;
+  width: 571px;
+  height: 513px;    
+  border-radius: 10px;
+  border: 2px solid #4c7586;
+  box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.2);
 }
 
 .name-info {

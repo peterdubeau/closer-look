@@ -1,5 +1,4 @@
 .layout {
-    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -8,7 +7,7 @@
 
 .layout-children {
     flex: 2;
-    padding: 100px;
+    padding-top: 100px;
 }
 
 .home-link {
