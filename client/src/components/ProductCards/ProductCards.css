@@ -1,3 +1,7 @@
+.impact-icons{
+  display: flex;
+}
+
 .product-cards {
   display: flex;
   align-items: center;
@@ -37,4 +41,18 @@
   border-top: 3px solid #4c7586;
   width: 350px;
   margin-bottom: 20px;
+}
+
+.true{
+  border: 2px solid green;
+  padding: 1px;
+  border-radius: 100%;
+  margin: auto 3px;
+}
+
+.false{
+  border: 2px solid red;
+  padding: 1px;
+  border-radius: 100%;
+  margin: auto 3px;
 }
