@@ -28,6 +28,10 @@ function App() {
       <Route path='/api/products/detail/:id'>
         <ProductDetails />
       </Route>
+      <Route path='/api/products' exact>
+        <SearchResults />
+      </Route>
+      
     </div>
   );
 }
