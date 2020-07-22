@@ -37,22 +37,24 @@ function ProductDetail(props) {
 
   useEffect(() => {
     displayProduct()
-  },[])
+  }, [])
 
   const { brandName, info, imgURL, people, planet, animals } = productState
 
-  
 
-    return (
-            <div className='product-details'>
-              <h3>{brandName}</h3>
-              <h4>{info}</h4>
-              <img className='product-image' src={imgURL} />
-              <img className={(animals === true ? 'true' : 'false')} src={Animal} />
-              <img className={(people === true ? 'true' : 'false')} src={People} />
-              <img className={(planet === true ? 'true' : 'false') }src={Globe} />
-            </div>
-        )
+
+  return (
+    <div className='product-details'>
+      <h3>{brandName}</h3>
+      <h4>{info}</h4>
+      <img className='product-image' src={imgURL} />
+      <div>
+        <img className={(animals === true ? 'true' : 'false')} src={Animal} />
+        <img className={(people === true ? 'true' : 'false')} src={People} />
+        <img className={(planet === true ? 'true' : 'false')} src={Globe} />
+      </div>
+    </div>
+  )
 }
 
 export default withRouter(ProductDetail)
