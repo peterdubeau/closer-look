@@ -3,6 +3,30 @@
   flex-direction: column;
 }
 
+.name-info {
+  width: 350px;
+  height: 100px;
+}
+
+.product-brand-name {
+  font-size: 30px;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #4c7586;
+  line-height: 1;
+  margin: 0;
+}
+
+.product-det-info {
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-style: italic;
+  color: #4c7586;
+  line-height: 1;
+  margin: 0;
+}
+
 .product-image{
   z-index: -1;
   width: 350px;

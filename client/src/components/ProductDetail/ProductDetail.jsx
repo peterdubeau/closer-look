@@ -45,10 +45,12 @@ function ProductDetail(props) {
 
   return (
     <div className='product-details'>
-      <h3>{brandName}</h3>
-      <h4>{info}</h4>
+      <div className='name-info'>
+        <p className='product-brand-name'>{brandName}</p>
+        <p className='product-det-info'>{info}</p>
+      </div>
       <img className='product-image' src={imgURL} />
-      <hr className='details-hr'/>
+      <hr className='details-hr' />
       <div className='impact-icons-det'>
         <img className={(animals === true ? 'true' : 'false')} src={Animal} />
         <img className={(people === true ? 'true' : 'false')} src={People} />
