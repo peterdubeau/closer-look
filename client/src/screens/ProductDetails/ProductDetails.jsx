@@ -7,7 +7,7 @@ import BrandDetails from '../../components/BrandDetails/BrandDetails'
 export default function ProductDetails() {
     return (
         <>
-        <Layout>
+            <Layout>
                 <div className="search-bar"></div>
                 <div className='product-and-brand-container'>
                     <div className="product-details"><ProductDetail /></div>

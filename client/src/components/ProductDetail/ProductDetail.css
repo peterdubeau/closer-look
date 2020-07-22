@@ -4,8 +4,8 @@
 }
 
 .name-info {
-  width: 350px;
-  height: 100px;
+  margin-top: 35px;
+  margin-left: 20px;
 }
 
 .product-brand-name {
@@ -30,6 +30,8 @@
 .product-image{
   z-index: -1;
   width: 350px;
+  height: 250px;
+  object-fit: cover;
   align-self: center;
 }
 

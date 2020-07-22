@@ -5,8 +5,6 @@
 
 .product-and-brand-container {
   display: flex;
-  flex-flow: row nowrap;
-  align-items: stretch;
 }
 
 
@@ -15,12 +13,10 @@
   height: 513px;    
   border-radius: 10px;
   box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.2);
-  border: solid 3px var(--metallic-blue);
 }
 
 .brand-details {
   width: 597px;
   height: 513px;
   border-radius: 20px;
-  border: solid 3px var(--metallic-blue);
 }
