@@ -1,13 +1,17 @@
-import React, { Component } from 'react'
+import React from 'react'
 import './Header.css'
 import Hamburger from '../../../assets/images/HamburgerMenu.png'
 import Search from '../../../assets/images/SearchIcon.png'
 import User from '../../../assets/images/UserIcon.png'
-import { Link } from 'react-router-dom'
+import { Link, withRouter } from 'react-router-dom'
 
 
-export default class Header extends Component {
-    render() {
+function Header(props) {
+
+    let page = window.location.pathname
+    let id = props.match.params.id
+
+    if (page === `/api/users/${id}`) {
         return (
             <div className='header'>
                 <img className='hamburger' src={Hamburger} />
@@ -15,10 +19,23 @@ export default class Header extends Component {
                     <h1>CLOSER LOOK</h1>
                 </Link>
                 <img className='search' src={Search} />
-                <Link to= {`api/user/`}>
+            </div>
+        )
+    } else {
+        return (
+            <div className='header'>
+                <img className='hamburger' src={Hamburger} />
+                <Link className='home-link' to='/'>
+                    <h1>CLOSER LOOK</h1>
+                </Link>
+                <img className='search' src={Search} />
+                <Link to={`api/user/`}>
                     <img className='user' src={User} />
                 </Link>
             </div>
         )
     }
+
 }
+
+export default withRouter(Header)
