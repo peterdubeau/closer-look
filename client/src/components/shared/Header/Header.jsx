@@ -3,14 +3,15 @@ import './Header.css'
 import Hamburger from '../../../assets/images/HamburgerMenu.png'
 import Search from '../../../assets/images/SearchIcon.png'
 import User from '../../../assets/images/UserIcon.png'
-import { Link } from 'react-router-dom'
+import { Link, withRouter } from 'react-router-dom'
 
 
-export default function Header() {
+function Header(props) {
 
     let page = window.location.pathname
+    let id = props.match.params.id
 
-    if (page === '/api/users/') {
+    if (page === `/api/users/${id}`) {
         return (
             <div className='header'>
                 <img className='hamburger' src={Hamburger} />
@@ -36,3 +37,5 @@ export default function Header() {
     }
 
 }
+
+export default withRouter(Header)
