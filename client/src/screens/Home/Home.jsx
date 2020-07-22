@@ -5,6 +5,7 @@ import Layout from '../../components/shared/Layout/Layout'
 import HangerIcon from "../../assets/images/HangerIcon.png"
 import ShoeIcon from "../../assets/images/ShoeIcon.png"
 import PurseIcon from "../../assets/images/PurseIcon.png"
+import NewsCards from '../../assets/images/HomeCards.png'
 
 import RealHeader from '../../components/HomeHeader/HomeHeader'
 
@@ -17,6 +18,7 @@ const Home = () => {
         <img src={PurseIcon}></img>
         <Search />
       </div>
+      <img src={NewsCards}/>
     </Layout>
   )
 }
