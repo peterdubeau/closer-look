@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom'
 import './ProductCards.css';
 import { getProducts } from '../../services/products'
 import Animal from '../../assets/images/Animal.png'
+import People from '../../assets/images/People.png'
+import Globe from '../../assets/images/Globe.png'
 
 export default function ProductCards(props) {
 
@@ -11,12 +13,14 @@ export default function ProductCards(props) {
     brandName: '',
     info: '',
     id: '',
-    animals: ''
+    animals: '',
+    people: '',
+    planet: ''
   }
 
   const [userState, userSetState] = useState(initialState)
 
-  const { imgURL, brandName, info, id, animals } = userState
+  const { imgURL, brandName, info, id, animals, people, planet } = userState
 
 
   const displayProduct = async (e) => {
@@ -26,7 +30,10 @@ export default function ProductCards(props) {
       imgURL: get.imgURL,
       brandName: get.brandName,
       info: get.info,
-      id: get._id
+      id: get._id,
+      animals: get.animals,
+      people: get.people,
+      planet: get.planet
     })
   }
   useEffect(() => {
@@ -48,7 +55,11 @@ export default function ProductCards(props) {
             <div className ='brand-info'>
               <p className="product-brand">{product.brandName}</p>
               <p className="product-info">{product.info}</p>
-              <img className={``} src={Animal}/>
+              <div className='impact-icons'>
+                <img className={(product.animals === true ? 'true' : 'false')} src={Animal} />
+                <img className={(product.people === true ? 'true' : 'false')} src={People} />
+                <img className={(product.planet === true ? 'true' : 'false') }src={Globe} />
+              </div>
             </div>
           </div>
           <hr className='product-hr'/>
