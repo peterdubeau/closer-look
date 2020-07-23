@@ -13,22 +13,22 @@ import LoginSignUp from './screens/LoginSignUp/LoginSignUp'
 function App() {
   return (
     <div className="app">
-      <Route path='/api/login' exact>
+      <Route path='/login' exact>
         <LoginSignUp />
       </Route>
       <Route path='/' exact>
         <Home />
       </Route> 
-      <Route path='/api/users/:id'>
+      <Route path='/users/:id'>
         <UserEdit component={User}/>
       </Route>
-      <Route path='/api/products/search/:type' exact>
+      <Route path='/products/search/:type' exact>
         <SearchResults />
       </Route>
-      <Route path='/api/products/detail/:id'>
+      <Route path='/products/detail/:id'>
         <ProductDetails />
       </Route>
-      <Route path='/api/products' exact>
+      <Route path='/products' exact>
         <SearchResults />
       </Route>
       
