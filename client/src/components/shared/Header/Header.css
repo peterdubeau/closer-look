@@ -1,6 +1,7 @@
 .header {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     height: 105px;
     width: 95%;
     margin: 0 auto;
@@ -8,6 +9,11 @@
     border-bottom-right-radius: 10px;
     background-color: #d3f4ee;  
     box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.12);
+}
+
+.ham-home {
+    display: flex;
+    align-items: center;
 }
 
 .header h1 {
@@ -27,7 +33,12 @@
 }
 
 .search-user {
-    margin-left: 65%;
+    display: flex;
+}
+
+.search {
+    height: 30px;
+    width: auto;
 }
 
 .user {
@@ -35,4 +46,5 @@
     width: auto;
     align-self: center;
     margin-left: 15px;
+    margin-right: 30px;
 }
