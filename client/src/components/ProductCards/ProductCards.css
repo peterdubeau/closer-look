@@ -64,5 +64,6 @@
 @media all and (max-width: 425px) {
     .product-cards {
       flex-direction: column;
+      margin-left: 20px;
     }
 }
