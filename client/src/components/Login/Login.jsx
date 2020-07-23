@@ -3,7 +3,6 @@ import { getUserByEmail } from '../../services/users'
 import './Login.css'
 import { Link, withRouter } from 'react-router-dom'
 import UserImage from '../../assets/images/UserIcon.png'
-import { get } from 'mongoose'
 
 function Login() {
 
