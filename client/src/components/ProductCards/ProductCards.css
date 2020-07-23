@@ -58,3 +58,12 @@
   border-radius: 100%;
   margin: auto 3px;
 }
+
+/***** MEDIA QUERIES *****/
+
+@media all and (max-width: 425px) {
+    .product-cards {
+      flex-direction: column;
+      margin-left: 20px;
+    }
+}

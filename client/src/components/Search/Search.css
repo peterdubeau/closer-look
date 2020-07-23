@@ -41,3 +41,14 @@
   
 }
 
+/***** MEDIA QUERIES *****/
+
+@media all and (max-width: 425px) {
+    .search-div {
+      width: 350px;
+    }
+
+    .search-input {
+      width: 225px;
+    }
+}
