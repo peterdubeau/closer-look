@@ -28,7 +28,7 @@ function Search(props) {
 
   const handleSubmit = (event) => {
     event.preventDefault()
-    props.history.push(`/api/products/search/${inputValue}`)
+    props.history.push(`/api/products/search/${inputValue.toLowerCase()}`)
   }
   
 
