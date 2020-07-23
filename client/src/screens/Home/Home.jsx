@@ -1,5 +1,6 @@
 import React from 'react'
 import './Home.css'
+import { Link } from 'react-router-dom'
 import Search from '../../components/Search/Search'
 import Layout from '../../components/shared/Layout/Layout'
 import HangerIcon from "../../assets/images/HangerIcon.png"
@@ -11,9 +12,9 @@ const Home = () => {
   return (
     <Layout>
       <div className="home">
-        <img src={HangerIcon}></img>
-        <img src={ShoeIcon}></img>
-        <img src={PurseIcon}></img>
+        <Link to="/api/products/search/tops"><img href="/api/products/search/tops" src={HangerIcon}></img></Link>
+        <Link to="/api/products/search/sneakers"><img href="/api/products/search/sneakers" src={ShoeIcon}></img></Link>
+        <Link to="/api/products/search/bags"><img href="/api/products/search/bags" src={PurseIcon}></img></Link>
       </div>
       <Search />
       <div className='news-cards'>
