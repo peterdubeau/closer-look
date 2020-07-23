@@ -13,8 +13,10 @@ export default class Header extends Component {
                     <h1>CLOSER LOOK</h1>
                     <h3>find out more about the products you love.</h3>
                 </div>
-                <img className='home-search' src={Search} />
-                <img className='home-user' src={User} />
+                <div className='search-user'>
+                    <img className='home-search' src={Search} />
+                    <img className='home-user' src={User} />
+                </div>
             </div>
         )
     }

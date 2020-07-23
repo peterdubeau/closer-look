@@ -53,12 +53,33 @@
 /***** MEDIA QUERIES *****/
 
 @media all and (max-width: 425px) {
- .home-header h1 {
+ 
+.home-header {
+        width: 100%;
+    }
+
+.home-header h1 {
      font-size: 41px;
  }   
 
  .home-header h3 {
      font-size: 14px; 
+     width: 245px;
+ }
+
+ .home-hamburger {
+     width: 35px;
+ }
+
+ .closer-look {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     margin-top: 60px;
+ }
+
+ .search-user {
+     margin-left: -50px;
  }
 
 }
