@@ -15,7 +15,7 @@ export default function BrandDetails() {
       </div>
     <div className ="cause-details">
       <h3>CLIMATE</h3>
-      <p>This product contributes to climate change in the production and use of pretroleum products.</p>
+      <p>This product contributes to climate change due to use of petroleum products.</p>
     </div> 
     <div className ="cause-details">
       <h3>SUSTAINABILITY</h3>
@@ -23,7 +23,7 @@ export default function BrandDetails() {
     </div>
     <div className ="cause-details">
       <h3>ANIMAL CRUELTY</h3>
-      <p>This product is animal cruelty free</p>
+      <p>This product is animal cruelty free.</p>
     </div>
     <div className ="cause-details">
       <h3>HABITAT DESTRUCTION</h3>

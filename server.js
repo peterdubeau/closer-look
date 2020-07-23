@@ -2,9 +2,9 @@ const express = require('express')
 const cors = require('cors')
 const bodyParser = require('body-parser')
 const logger = require('morgan')
-const userRoutes = require('./routes/users') // out until mongo is up and running
+const userRoutes = require('./routes/users')
 const productRoute = require('./routes/products')
-const db = require('./db/connection') // out for now.
+const db = require('./db/connection')
 const PORT = process.env.PORT || 3000
 
 const app = express();
@@ -13,7 +13,7 @@ app.use(cors())
 app.use(bodyParser.json())
 app.use(logger('dev'))
 
-app.use('/api', userRoutes);  // Commented out until mongo is up and running
+app.use('/api', userRoutes);
 app.use('/api', productRoute); 
 db.on('error', console.error.bind(console, 'MongoDB connection error:'))
 

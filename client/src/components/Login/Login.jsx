@@ -18,7 +18,6 @@ function Login() {
 
 
   let handleEventChange = async (e) => {
-    // const get = await getUserByEmail(email)
     userSetState({ ...userState, [e.target.name]: e.target.value})
   }
 

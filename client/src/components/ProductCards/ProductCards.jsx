@@ -58,7 +58,7 @@ export default function ProductCards(props) {
               <div className='impact-icons'>
                 <img className={(product.animals === true ? 'true' : 'false')} src={Animal} />
                 <img className={(product.people === true ? 'true' : 'false')} src={People} />
-                <img className={(product.planet === true ? 'true' : 'false') }src={Globe} />
+                <img className={(product.planet === true ? 'true' : 'false') } src={Globe} />
               </div>
             </div>
           </div>
