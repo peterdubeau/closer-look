@@ -15,13 +15,11 @@ function SearchResults(props) {
   console.log(searchQuery)
   
   const displayProduct = async (e) => {
-    //get.filter type (props.match.params)
-    //bird api react app
-    //props.match.params
     
+
     const get = await getProducts()
-    let things = get.filter(results => results.type === searchQuery)
-    productSetState(things)
+    let typeResults = get.filter(results => results.type === searchQuery)
+    productSetState(typeResults)
   }
 
   useEffect(() => {
