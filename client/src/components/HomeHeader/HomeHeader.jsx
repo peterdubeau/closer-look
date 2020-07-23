@@ -3,6 +3,7 @@ import './HomeHeader.css'
 import Hamburger from '../../assets/images/HamburgerMenu.png'
 import Search from '../../assets/images/SearchIcon.png'
 import User from '../../assets/images/UserIcon.png'
+import {Link} from 'react-router-dom'
 
 export default class Header extends Component {
     render() {
@@ -15,7 +16,9 @@ export default class Header extends Component {
                 </div>
                 <div className='search-user'>
                     <img className='home-search' src={Search} />
-                    <img className='home-user' src={User} />
+                    <Link to={`/login`}>
+                        <img className='home-user' src={User} />
+                    </Link>
                 </div>
             </div>
         )
