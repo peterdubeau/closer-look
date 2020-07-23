@@ -42,7 +42,7 @@ function Login() {
       </header>
       <input type='text' name='email' placeholder='EMAIL' value={email} onChange={handleEventChange}  />
       <input type='password' name='password' placeholder='PASSWORD' onChange={handleEventChange} />
-      <Link to={`/api/users/${id}`}>
+      <Link to={`/users/${id}`}>
         <button onClick={handleSubmit} className='login-btn'>LOG IN</button>
       </Link>
     </div>

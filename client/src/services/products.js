@@ -38,7 +38,7 @@ export const getProduct = async id => {
 
   export const deleteProducts = async id => {
     try {
-        const response = await api.delete(`/Products/${id}`)
+        const response = await api.delete(`/products/${id}`)
         return response.data
     } catch (error) {
         throw error
