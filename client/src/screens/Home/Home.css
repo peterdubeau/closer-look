@@ -1,0 +1,37 @@
+div.layout-children{
+  padding-top: 30px;
+  padding-bottom: 0;
+}
+
+.home {
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home img {
+    height: 120px;
+    margin: 0px 20px 15px 20px;
+}
+
+.news-cards {
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+
+#news{
+  padding-top: 30px;
+}
+
+/***** MEDIA QUERIES *****/
+
+@media all and (max-width: 425px) {
+    .home img {
+      height: 80px;
+      margin: 0px 10px 15px 10px;
+    }
+}

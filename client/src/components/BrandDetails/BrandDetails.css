@@ -1,0 +1,57 @@
+.cause-card{
+    margin: 30px;
+    width: 597px;
+    height: 513px;
+    border-radius: 20px;
+    border: 3px solid #4c7586;
+}
+
+.cause-details{
+  width: 472px;
+  height: 55px;
+  margin: auto 59px;
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 1;
+  color:  #4c7586;
+  border-bottom: 1px solid #4c7586;
+  margin-bottom: 15px;
+}
+
+.cause-icon{
+  margin: auto 3px;
+  margin-bottom: 5px;
+}
+
+.cause-icon-container{
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+h3{
+  font-size: 12px;
+}
+
+/***** MEDIA QUERIES *****/
+
+@media all and (max-width: 425px) {
+  .cause-card {
+    width: 310px;
+    height: auto;
+  }
+
+  .cause-icon-container {
+    margin-top: 10px;
+  }
+
+  .cause-details {
+    width: 250px;
+    height: 100px;
+    margin: 0 auto;
+  }
+
+  .cause-details h3 {
+    font-size: 16px;
+  }
+}

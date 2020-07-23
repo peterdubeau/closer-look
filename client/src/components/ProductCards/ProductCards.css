@@ -1,0 +1,69 @@
+.impact-icons{
+  display: flex;
+}
+
+.product-cards {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 1400px;
+}
+
+.product-cards a {
+  text-decoration: none;
+  color: #4c7586;
+}
+
+.product {
+  display: flex;
+  width: 400px;
+}
+
+.product-img {
+  height: 120px;
+  width: 120px;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.brand-info {
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 5px;
+}
+
+.product-info {
+  font-style: italic;
+  font-weight: 700;
+}
+
+.product-hr {
+  border-top: 3px solid #4c7586;
+  width: 350px;
+  margin-bottom: 20px;
+}
+
+.true{
+  border: 2px solid green;
+  padding: 1px;
+  border-radius: 100%;
+  margin: auto 3px;
+}
+
+.false{
+  border: 2px solid red;
+  padding: 1px;
+  border-radius: 100%;
+  margin: auto 3px;
+}
+
+/***** MEDIA QUERIES *****/
+
+@media all and (max-width: 425px) {
+    .product-cards {
+      flex-direction: column;
+      margin-left: 20px;
+    }
+}

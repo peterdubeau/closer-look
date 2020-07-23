@@ -8,4 +8,17 @@
     height: 500px;
     margin-left: 150px;
     margin-right: 150px;
+}
+
+/***** MEDIA QUERIES *****/
+
+@media all and (max-width: 425px) {
+    .vertical-line {
+        display: none;
+    }
+
+    .login-signup {
+        display: flex;
+        flex-direction: column;
+    }
   }
