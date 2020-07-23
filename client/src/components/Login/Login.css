@@ -50,3 +50,11 @@
     height: 30px;
     margin: 10px;
 }
+
+/***** MEDIA QUERIES *****/
+
+@media all and (max-width: 425px) {
+    .login-btn {
+        width: 240px;
+    }
+  }
