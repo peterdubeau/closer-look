@@ -12,9 +12,9 @@ const Home = () => {
   return (
     <Layout>
       <div className="home">
-        <Link to="/api/products/search/tops"><img href="/api/products/search/tops" src={HangerIcon}></img></Link>
-        <Link to="/api/products/search/sneakers"><img href="/api/products/search/sneakers" src={ShoeIcon}></img></Link>
-        <Link to="/api/products/search/bags"><img href="/api/products/search/bags" src={PurseIcon}></img></Link>
+        <Link to="/products/search/tops"><img href="/api/products/search/tops" src={HangerIcon}></img></Link>
+        <Link to="/products/search/sneakers"><img href="/api/products/search/sneakers" src={ShoeIcon}></img></Link>
+        <Link to="/products/search/bags"><img href="/api/products/search/bags" src={PurseIcon}></img></Link>
       </div>
       <Search />
       <div className='news-cards'>
