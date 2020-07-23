@@ -45,7 +45,7 @@ const main = async () => {
         {
           "brandName": "Aldo",
           "info": "Fashion Sneaker",
-          "imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQBRjn08EXK_yPIys2nBWVX-uEdlheIWKuopg&usqp=CAU",
+          "imgURL": "https://di2ponv0v5otw.cloudfront.net/posts/2019/08/06/5d4a4213d1aa25d5ad03e18e/m_5d4a423a2f4831e4157884e6.jpg",
           "people": true,
           "planet": true,
           "animals": true,
