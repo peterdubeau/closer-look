@@ -26,11 +26,13 @@ function Search(props) {
     
  
 
-  const handleSubmit = (event) => {
-    event.preventDefault()
-    props.history.push(`/products/search/${inputValue.toLowerCase()}`)
+  const handleSubmit = () => {
+    if (inputValue !== '') {
+      return props.history.push(`/products/search/${inputValue.toLowerCase()}`)
+    } else {
+      return props.history.push(`/products/`)
+    }
   }
-  
 
   return (
 

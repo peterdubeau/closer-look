@@ -7,6 +7,7 @@ import SearchResults from './screens/SearchResults/SearchResults'
 import ProductDetails from './screens/ProductDetails/ProductDetails'
 import Home from './screens/Home/Home'
 import LoginSignUp from './screens/LoginSignUp/LoginSignUp'
+import AllProducts from './screens/AllProducts/AllProducts'
 // import ProductCards from './components/ProductCards/ProductCards';
 
 
@@ -29,7 +30,7 @@ function App() {
         <ProductDetails />
       </Route>
       <Route path='/products' exact>
-        <SearchResults />
+        <AllProducts />
       </Route>
       
     </div>
