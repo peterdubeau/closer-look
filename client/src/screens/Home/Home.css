@@ -26,3 +26,12 @@ div.layout-children{
 #news{
   padding-top: 30px;
 }
+
+/***** MEDIA QUERIES *****/
+
+@media all and (max-width: 425px) {
+    .home img {
+      height: 80px;
+      margin: 0px 10px 15px 10px;
+    }
+}

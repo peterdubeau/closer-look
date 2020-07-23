@@ -49,3 +49,16 @@
     height: 35px;
     margin: 40px 25px 0px 20px;
 }
+
+/***** MEDIA QUERIES *****/
+
+@media all and (max-width: 425px) {
+ .home-header h1 {
+     font-size: 41px;
+ }   
+
+ .home-header h3 {
+     font-size: 14px; 
+ }
+
+}
