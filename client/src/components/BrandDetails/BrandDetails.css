@@ -32,3 +32,26 @@
 h3{
   font-size: 12px;
 }
+
+/***** MEDIA QUERIES *****/
+
+@media all and (max-width: 425px) {
+  .cause-card {
+    width: 310px;
+    height: auto;
+  }
+
+  .cause-icon-container {
+    margin-top: 10px;
+  }
+
+  .cause-details {
+    width: 250px;
+    height: 100px;
+    margin: 0 auto;
+  }
+
+  .cause-details h3 {
+    font-size: 16px;
+  }
+}

@@ -34,7 +34,7 @@ function Header(props) {
                 </div>
                 <div className='search-user'>
                     <img className='search' src={Search} />
-                    <Link to={`/user/${id}`}>
+                    <Link to={`/login`}>
                         <img className='user' src={User} />
                     </Link>
                 </div>

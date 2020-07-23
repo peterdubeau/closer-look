@@ -57,5 +57,24 @@
   width: 80px;
 }
 
+/***** MEDIA QUERIES *****/
 
+@media all and (max-width: 425px) {
+  .product-details {
+    width: 310px;
+  }
 
+  .product-image {
+    width: 250px;
+    height: auto;
+  }
+
+  .name-info {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  .details-hr {
+    margin-bottom: 10px;
+  }
+}
