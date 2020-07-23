@@ -99,7 +99,7 @@ const main = async () => {
     },
     {
       "brandName": "Telfar",
-      "info": "FasLogo Embossed Tote Bag",
+      "info": "Logo Embossed Tote Bag",
       "imgURL": "https://si.wsj.net/public/resources/images/B3-DZ040_TELFAR_8SR_20190512192218.jpg",
       "people": true,
       "planet": true,
@@ -108,8 +108,8 @@ const main = async () => {
     },
     {
         "brandName": "Telfar",
-        "info": "Embossed Leather Look Cross Body Bag",
-        "imgURL": "https://cdna.lystit.com/200/250/tr/photos/farfetch/d3a290aa/telfar-yellow-Embossed-logo-tote-bag.jpeg",
+        "info": "Tote Bag",
+        "imgURL": "https://images.lvrcdn.com/Big72I/XZO/019_26db6f7d-d335-4232-bafc-e3d8834c4d36.JPG",
         "people": true,
         "planet": true,
       "animals": true,
@@ -181,7 +181,7 @@ const main = async () => {
     {
       "brandName": "Nike",
       "info": "Air Max 270 Shoes",
-      "imgURL": "https://dks.scene7.com/is/image/GolfGalaxy/18NIKWRMX270XXXXXLFS_Pink_Orange_Black?qlt=70&wid=600&fmt=pjpeg",
+      "imgURL": "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto/75e8522c-49c3-4eab-b29e-f6bce93aa5b2/air-max-270-react-mens-shoe-zPRv3k.jpg",
       "people": false,
       "planet": false,
       "animals": false,
@@ -189,8 +189,8 @@ const main = async () => {
     },
     {
       "brandName": "Adidas",
-      "info": "YeezyBoost 350 V2 Zebra",
-      "imgURL": "https://stockx-360.imgix.net//Adidas-Yeezy-Boost-350-V2-Zebra/Images/Adidas-Yeezy-Boost-350-V2-Zebra/Lv2/img01.jpg?auto=format,compress&w=559&q=90&dpr=2&updated_at=1578503931",
+      "info": "Yeezy 500",
+      "imgURL": "https://tres-bien.com/media/catalog/product/cache/4df57bf4c117b7e5982dee8955fd82cb/f/o/footwear_191114_031.jpg",
       "people": false,
       "planet": true,
       "animals": false,
@@ -199,7 +199,7 @@ const main = async () => {
     {
       "brandName": "Reebok",
       "info": "DMX Series 1200",
-      "imgURL": "https://cdn.runrepeat.com/i/reebok/31720/chaussures-reebok-dmx-series-1200-blanc-gris-bleu-vert-citron-9c01-600.jpg",
+      "imgURL": "https://i.pinimg.com/474x/c9/7f/ea/c97feab90735a5670b1684d072c7e9f4.jpg",
       "people": false,
       "planet": false,
       "animals": true,
@@ -235,8 +235,8 @@ const main = async () => {
   },
 {
   "brandName": "Prada",
-  "info": "Medium Galleria Tote Bag",
-  "imgURL": "https://images.neimanmarcus.com/ca/14/product_assets/L/6/5/Q/B/NML65QB_bz.jpg",
+  "info": "Diagramme Leather Shoulder Bag",
+  "imgURL": "https://img.mytheresa.com/1088/1088/66/jpeg/catalog/product/43/P00403016.jpg",
   "people": false,
   "planet": false,
   "animals": false,
