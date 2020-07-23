@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { getUserByEmail } from '../../services/users'
 import './Login.css'
 import { Link, withRouter } from 'react-router-dom'
@@ -23,11 +23,13 @@ function Login() {
   }
 
   let handleSubmit = async (e) => {
-    e.preventDefault()
     const get = await getUserByEmail(email)
     userSetState({ ...userState, id: get._id })
   }
 
+  useEffect(() => {
+    handleSubmit()
+  })
 
 
   return (
