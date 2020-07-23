@@ -26,10 +26,12 @@ function Header(props) {
     } else {
         return (
             <div className='header'>
-                <img className='hamburger' src={Hamburger} />
-                <Link className='home-link' to='/'>
-                    <h1>CLOSER LOOK</h1>
-                </Link>
+                <div className='ham-home'>
+                    <img className='hamburger' src={Hamburger} />
+                    <Link className='home-link' to='/'>
+                        <h1>CLOSER LOOK</h1>
+                    </Link>
+                </div>
                 <div className='search-user'>
                     <img className='search' src={Search} />
                     <Link to={`/user/${id}`}>
