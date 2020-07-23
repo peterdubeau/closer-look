@@ -13,8 +13,8 @@ app.use(cors())
 app.use(bodyParser.json())
 app.use(logger('dev'))
 
-app.use(userRoutes);  // Commented out until mongo is up and running
-app.use(productRoute); 
+app.use('/api',userRoutes);  // Commented out until mongo is up and running
+app.use('/api', productRoute); 
 db.on('error', console.error.bind(console, 'MongoDB connection error:'))
 
 app.listen(PORT, () => console.log(`listening on port: ${PORT}`))
