@@ -17,6 +17,7 @@
 
 .product {
   display: flex;
+  width: 400px;
 }
 
 .product-img {
