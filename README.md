@@ -23,19 +23,16 @@
 
 ## Overview
 
-_**Closer Look**_ is an application that allows users to dive deeper into a brand and their products to increase the user’s awareness of social side-effects associated with their purchase by displaying the brands ethical actions.
+_**Closer Look**_ is a website that allows users to dive deeper into information about brands when shopping online, in order to increase awareness of social and environmental side-effects associated with purchases by displaying info related to brands' ethical actions when viewing their products.
 
 ### Team Members
 
-Created, designed, and developed by [Darnycya Smith](https://github.com/darnycya), [Alex Beckerman](https://github.com/alexbaldman), [Calliope Jimenez-Clark](https://github.com/NocturnalMusing) and [Pete Du Beau](https://github.com/peterdubeau) (Git Czar) for the General Assembly Software Engineering Immersive (May '20 Cohort: Constellations) Unit 3 Group Project.
+Created, designed, and developed by [Darnycya Smith](https://github.com/darnycya), [Alex Beckerman](https://github.com/alexbaldman), [Calliope Jimenez-Clark](https://github.com/NocturnalMusing) and [Pete Du Beau](https://github.com/peterdubeau) (Git Czar / Commitssioner) for General Assembly Software Engineering Immersive's (May '20 Cohort: Constellations) Unit 3 Group Project.
 
 ### Team Expectations
 
 Team values and expectations can be found on our project's [Group Expectation Setting Document](https://docs.google.com/document/d/1nRMA-V0f6PnXBNkURLLVefh6L5--xXHlyZA2i2bn4hg/edit).
 
-### Permissions
-
-Digital assets used with full licensing and permission from [Death to Stock Photo](), [Freepik](), and [Unsplash](). Custom digital design and branding by John Lansing. Digital assets stored locally and on [Imgur]().
 
 <br>
 
@@ -47,7 +44,7 @@ _The goal for our **Closer Look** MVP is for users to be able to create an accou
 
 ### Goals
 
-- _Create a user 'log-in / sign-up' page in order to create a new account, or log-in to an account that has already been created._
+- _Create a user 'log-in / sign-up' page in order to create a new account, or log-in to an account if one already exists._
 - _Create a user profile page with CRUD features._
 - _Use CSS for styling of all pages._
 
@@ -81,9 +78,9 @@ _The goal for our **Closer Look** MVP is for users to be able to create an accou
 
 #### Component Hierarchy
 
-- Within the folder for our overall application, the frontend will be built with ReactJS and will be held in the 'client' folder.  
+- Within the folder for the overall application, our frontend will be built with ReactJS and will be held in the 'client' folder.  
 
-- Inside the 'client' folder, the folder 'src' will hold our components, screens, and any assets used to make up the app's front end, structured as per below:
+- Inside the 'client' folder, the folder 'src' will contain our components, screens, and any assets used to make up the app's frontend, and will be structured as per below:
 
 ``` structure
 
@@ -93,27 +90,31 @@ src
       |__ images
       |__ mockups
 |__ components/
-      |__ Login.jsx
-      |__ UserEdit.jsx
-      |__ UserCreate.jsx           
-      |__ UserProfile.jsx
-      |__ BrandDetails.jsx
-      |__ ProductDetails.jsx
+      |__ Login
+      |__ UserEdit
+      |__ UserCreate           
+      |__ UserProfile
+      |__ BrandDetails
+      |__ ProductDetails
+      |__ ProductCards
+      |__ HomeHeader
+      |__ Search
       |__ shared/
-            |__ Header.jsx
-            |__ Layout.jsx
-            |__ Nav.jsx
+            |__ Header
+            |__ Layout
+            |__ Nav
 |_ screens/
-      |__ User.jsx
-      |__ Home.jsx
-      |__ LoginSignUp.jsx 
-      |__ ProductDetails.jsx      
+      |__ User
+      |__ Home
+      |__ LoginSignUp 
+      |__ ProductDetails
+      |__ SearchResults
+      |__ AllProducts    
 |__ services/
       |__ apiConfig.js
       |__ products.js            
       |__ users.js
-|__ utils/      
-      |__ search.js
+
 
 ```
 
@@ -122,14 +123,17 @@ src
 
 |  Component   |    Type    | state | props | Description                                                      |
 | :----------: | :--------: | :---: | :---: | :--------------------------------------------------------------- |
-| Header    | functional |   n   |   n   | _will contain the navigation component and logo._      |
-| Navigation  | functional |   n   |   n   | _will contain links to each page in order to navigate views within the app_   |
-| LoginSignUp  | functional |   y   |   n   | _will allow the user to log-in to their account, or sign up for an account if they haven't yet created one._ |
-| Layout | functional |   n   |   y   | _controls the layout of each screen, containing header and nav._                |
-| User | functional |   n   |   n   | _will allow the user to to create an account._
-| Brand Details |   class    |   n   |   n   | _will display relevant brand info relative to each product._ |
-| Product Details  |   class    |   n   |   n   | _will display products based on user criteria._ |
-| Search    | functional |   n   |   n   | _allows users to search within the app/site for products._ |
+| Header    | functional |   n   |   n   | _Header to be contained in layout and displayed on various screens._  |
+| HomeHeader    | functional |   n   |   n   | _Header version for the homepage._  |
+| Login  | functional |   y   |   n   | _Allows user to log-in to their account._  |
+| Layout | functional |   n   |   y   | _Controls the layout of screens, and contains header component._  |
+| UserCreate | functional |   y   |   n   | _Allows user to create a profile._
+| UserEdit | functional |   y   |   y   | _Allows user to edit their profile._  |
+| UserProfile | functional |   n   |   n   | _Displays the users profile information._  |
+| BrandDetails |   functional    |   n   |   n   | _Displays relevant brand info relative to each product._ |
+| ProductDetail  |   functional    |   y   |   y   | _Displays details about the product._ |
+| ProductCards  |   functional    |   y   |   y   | _Display products based on user criteria._ |
+| Search    | functional |   y   |   y   | _Allows users to search for products._ |
 
 
 #### Component Estimates
@@ -137,10 +141,10 @@ src
 
 | Task                | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
-|     Layout          | H | 3hrs | - | - |
+|    Layout          | H | 3hrs | - | - |
 |    Brand Data       | M | 3hrs | - | - |
-|      Login          | H | 6hrs | - | - |
-|     Sign-up         | H | 3hrs | - | - |
+|    Login          | H | 6hrs | - | - |
+|    Sign-up         | H | 3hrs | - | - |
 |    User-profile     | H | 6hrs | - | - |
 |    Brand Details    | L | 4hrs | - | - |
 |    Brand List       | L | 4hrs | - | - |
@@ -153,7 +157,7 @@ src
 
 ### Server (Back End)
 
-- A server will be set up in order to host/store product and user information.  W
+- A server will be set up in order to host/store product and user information.
 
 #### ERD Model
 
@@ -178,7 +182,7 @@ database_db
 
 - _Have working generic controller actions for full-CRUD using Express, Mongoose, and MongoDB in order to implement user / password functions and store product and user data._
 - _Create an API of objects representing products for sale, and users of the site._
-- _Create a React app with components to be displayed within each screen, allowing users to view products while displaying information about each product's brand and their potential impact on, or relationship to, various societal, social, and environmental issues._
+- _Create a React app with components to be displayed within each screen, allowing users to view products while displaying information about each product's brand and their potential impact on/relationship to social and environmental issues and causes._
 
 ***
 
