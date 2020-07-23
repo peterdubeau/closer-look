@@ -162,7 +162,7 @@ const main = async () => {
     },
     {
         "brandName": "Tier",
-        "info": "Tier Super Senior Varsity Jacket",
+        "info": "Tier Varsity Jacket",
         "imgURL": "https://static1.squarespace.com/static/54d988d4e4b0fc865498644f/5b3a816c562fa75b2b905908/5dd00be248fc02235974ccfc/1573915621171/8DBDF313-EDEE-4B60-879B-4EE76BF0A123?format=1500w",
         "people": true,
         "planet": true,
@@ -217,7 +217,7 @@ const main = async () => {
     },
     {
         "brandName": "Aldo",
-        "info": "Dwiedia Black Textile Neoprene",
+        "info": "Dwiedia Neoprene",
         "imgURL": "https://media.aldoshoes.com/v3/product/dwiedia/009-003-030/dwiedia_black_009-003-030_main_sq_gy_1200x1200.jpg",
         "people": true,
         "planet": true,
@@ -235,7 +235,7 @@ const main = async () => {
   },
 {
   "brandName": "Prada",
-  "info": "Diagramme Leather Shoulder Bag",
+  "info": "Leather Shoulder Bag",
   "imgURL": "https://img.mytheresa.com/1088/1088/66/jpeg/catalog/product/43/P00403016.jpg",
   "people": false,
   "planet": false,
