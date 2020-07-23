@@ -37,17 +37,18 @@ function Search(props) {
      
       <div className='search-div'>
         <img type="submit" value="SEARCH" className='search-image' src={img} />
-        <form onSubmit={handleSubmit} className="search-form">
+        <form onSubmit={handleSubmit}>
           <input
-            className="search-input"
+          className="search-input"
             value={inputValue}
             onChange={handleChange}
             name="inputValue"
             placeholder='SEARCH'
             type="text"
             autoFocus
-          />
-        </form>
+      />
+          </form>
+       
       </div>
        
     )

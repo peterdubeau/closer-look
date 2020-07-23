@@ -1,8 +1,3 @@
-.search-form {
-  display: flex;
-  justify-content: center;
-}
-
 .search-div {
   display: flex;
   align-items: center;
@@ -21,9 +16,12 @@
 }
 
 .search-input {
+  display: flex;
+  justify-content: center;
   border: none;
-  width: 400px;
-  height: 30px;
+  outline: none;
+  width: 530px;
+  height: 40px;
   font-style: italic;
   font-size: 15px;
   font-weight: 700;
@@ -35,9 +33,11 @@
   font-style: italic;
   font-size: 15px;
   font-weight: 700;
+  
 }
 
 .search-input:focus::placeholder {
   color: transparent;
+  
 }
 
